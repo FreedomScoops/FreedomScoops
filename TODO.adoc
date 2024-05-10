@@ -1,0 +1,49 @@
+= Freedom Scoops TO-DO list
+
+== General 
+
+== Notes (4-18-2024) 
+  ** A stable build was release on GitHub as a temporary solution until a fix can be made on the main branch. 
+  ** New assets submits and changes by (ZNukem) 
+  ** Removed bg screen title logo.
+  ** 6 & 7 weapon keys broken needs to be fixed.
+  ** Tweeking buttion swiches to work right in game.
+  ** Chex dehacked needs to be added in at somepoint.
+  ** GFX swap can be done using = in pwad.txt and other docs, was already there.
+
+== Notes (3-28-2024) 
+  ** Open development branch to fix problems with upload files bug on GitHub brakes make.
+  ** The buildcfg.txt stuff was reworked for Freedom Scoops and split the wads two parts and FSA. 
+  ** Data-month-year was added in makefile and versioning commented out.
+
+=== Notes (3-27-2024) 
+  ** Bug issue was added on GitHub tracker about source stuff getting busted.
+  ** Removing bg screen title logo.
+  ** Replace all FreeDoom names in makefile and buildcfg.
+  ** Need to do Texture, Patches, Sprite swap for First and Second Crunch.
+  ** Improve wad build system.
+
+=== Notes (03-02-2024)
+  ** The files repo was wiped and the working files was re-uploaded but the bug was still there busting the wad builder.
+
+=== Notes (03-01-2024)
+  ** Rename project into Freedom Scoops to be universal to other Cereal besides flakes.
+  ** End Level screen music is change with FDM track d_dm03
+
+=== Notes (02-05-2024)
+  ** Plans to split the wads into a two part episodic and keep freedm for FF.
+  ** Rename Freedom Flakes project into new title that fits 
+  ** Finding away to remove bg screen title logo.
+
+=== Notes (11-27-2023) to (02-2024)
+  ** Assets changes by (ZNukem)
+  ** Making updates on text files and adding folders.
+  ** Wad build system problem started and was fixed almost many times somehow github broke some changes somewhere on upload. 
+
+=== Notes (11-27-2023)
+  ** dari forked project and make pull request for Freedoom Music was used as temporary solution.
+  ** Assets changes by (ZNukem)
+
+=== Notes (09-23-2023)
+  ** Date that it was started on GitHub known orignally as Freedom Flakes
+  ** Freedoom was used as base to build on the project.
