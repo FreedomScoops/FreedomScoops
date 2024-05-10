@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/fs1"
-        name: FreedomScoops1${{steps.buildstep.outputs.VERSION}}
+        name: Freedom Scoops 1${{steps.buildstep.outputs.VERSION}}
     - name: Upload Freedom Scoops Arena
       uses: actions/upload-artifact@v1
       with:
