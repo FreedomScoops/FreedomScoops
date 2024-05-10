@@ -46,10 +46,10 @@ jobs:
     - name: Upload Freedom Scoops 1
       uses: actions/upload-artifact@v1
       with:
-        path: "artifacts/freedoom"
+        path: "artifacts/fs1"
         name: fs1-${{steps.buildstep.outputs.VERSION}}
     - name: Upload Freedom Scoops Arena
       uses: actions/upload-artifact@v1
       with:
-        path: "artifacts/freedm"
+        path: "artifacts/fsa"
         name: fsa-${{steps.buildstep.outputs.VERSION}}
