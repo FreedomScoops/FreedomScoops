@@ -136,7 +136,7 @@ CREDITS.txt: CREDITS
 #DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
-	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs freedm $(FREEDM) $(DISTDOCS)
+	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
 	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(DISTDOCS)
 
 json: $(OBJS)
