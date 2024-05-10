@@ -36,19 +36,19 @@ jobs:
         make dist
         mkdir -p artifacts/freedoom
         mkdir -p artifacts/freedm
-        unzip wads/freedoom-*.zip -d artifacts/freedoom
-        unzip wads/freedm-*.zip -d artifacts/freedm
+        unzip wads/fs1-*.zip -d artifacts/fs1
+        unzip wads/fsa-*.zip -d artifacts/fsa
         export VERSION=$(git describe --abbrev=8)
         if [[ ${VERSION:0:1} == "v" ]]; then
           export VERSION=${VERSION:1}
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-    - name: Upload Freedoom
+    - name: Upload Freedom Scoops 1
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/freedoom"
         name: freedoom-${{steps.buildstep.outputs.VERSION}}
-    - name: Upload Freedm
+    - name: Upload Freedom Scoops Arena
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/freedm"
