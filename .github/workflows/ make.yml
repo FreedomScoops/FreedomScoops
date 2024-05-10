@@ -43,11 +43,11 @@ jobs:
           export VERSION=${VERSION:1}
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-    - name: Upload Freedom Scoops 1
+    - name: Upload Freedom Scoops
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/fs1"
-        name: Freedom Scoops 1${{steps.buildstep.outputs.VERSION}}
+        name: Freedom Scoops ${{steps.buildstep.outputs.VERSION}}
     - name: Upload Freedom Scoops Arena
       uses: actions/upload-artifact@v1
       with:
