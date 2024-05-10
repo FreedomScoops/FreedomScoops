@@ -128,11 +128,11 @@ COPYING.txt: COPYING.adoc
 CREDITS.txt: CREDITS
 	unix2dos --add-bom --newfile $< $@
 
-CREDITS-MUSIC.txt: CREDITS-MUSIC
-	unix2dos --add-bom --newfile $< $@
+#CREDITS-MUSIC.txt: CREDITS-MUSIC
+	#unix2dos --add-bom --newfile $< $@
 
 HTMLDOCS=NEWS.html README.html
-TEXTDOCS=COPYING.txt CREDITS.txt CREDITS-MUSIC.txt
+TEXTDOCS=COPYING.txt CREDITS.txt #CREDITS-MUSIC.txt
 DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
@@ -320,7 +320,7 @@ uninstall-freedm:
 	      "$(target)$(mandir)/man6/freedm.6"                                \
 	      "$(target)$(waddir)/freedm.wad"                                   \
 	      "$(target)$(docdir)/freedm/CREDITS"                               \
-	      "$(target)$(docdir)/freedm/CREDITS-MUSIC"                         \
+	    #  "$(target)$(docdir)/freedm/CREDITS-MUSIC"                         \
 	      "$(target)$(docdir)/freedm/COPYING"                               \
 	      "$(target)$(docdir)/freedm/NEWS.html"                             \
 	      "$(target)$(docdir)/freedm/README.html"                           \
@@ -345,7 +345,7 @@ uninstall-freedoom:
 	      "$(target)$(waddir)/freedoom1.wad"                                \
 	      "$(target)$(waddir)/freedoom2.wad"                                \
 	      "$(target)$(docdir)/freedoom/CREDITS"                             \
-	      "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
+	     # "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
 	      "$(target)$(docdir)/freedoom/COPYING"                             \
 	      "$(target)$(docdir)/freedoom/NEWS.html"                           \
 	      "$(target)$(docdir)/freedoom/README.html"                         \
