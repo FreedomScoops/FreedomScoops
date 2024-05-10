@@ -34,8 +34,8 @@ jobs:
       id: buildstep
       run: |
         make dist
-        mkdir -p artifacts/freedoom
-        mkdir -p artifacts/freedm
+        mkdir -p artifacts/fs1
+        mkdir -p artifacts/fsa
         unzip wads/fs1-*.zip -d artifacts/fs1
         unzip wads/fsa-*.zip -d artifacts/fsa
         export VERSION=$(git describe --abbrev=8)
@@ -47,9 +47,9 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/freedoom"
-        name: freedoom-${{steps.buildstep.outputs.VERSION}}
+        name: fs1-${{steps.buildstep.outputs.VERSION}}
     - name: Upload Freedom Scoops Arena
       uses: actions/upload-artifact@v1
       with:
         path: "artifacts/freedm"
-        name: freedm-${{steps.buildstep.outputs.VERSION}}
+        name: fsa-${{steps.buildstep.outputs.VERSION}}
