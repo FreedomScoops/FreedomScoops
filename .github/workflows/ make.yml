@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0
     - name: Get full repository history
       run: |
-        git remote add freedoom https://github.com/freedomscoops/freedomscoops.git
+        git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
         git fetch --all
     - name: Install Prerequisites
       run: |
