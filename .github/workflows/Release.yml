@@ -1,0 +1,56 @@
+name: Build Public Release 
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Get full repository history
+      run: |
+        git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
+        git fetch --all
+    - name: Install Prerequisites
+      run: |
+        sudo apt update
+        sudo apt install python3-pil asciidoc unzip zip ruby dos2unix
+        sudo gem install asciidoctor-pdf --pre
+    - name: Install Deutex
+      run: |
+        git clone https://github.com/Doom-Utils/deutex.git
+        cd deutex
+        git checkout v5.2.1
+        sudo apt install libpng-dev
+        ./bootstrap
+        ./configure
+        make
+        sudo make install
+    - name: Build
+      id: buildstep
+      run: |
+        make dist
+        mkdir -p artifacts/fs1
+        mkdir -p artifacts/fsa
+        unzip wads/fs1-*.zip -d artifacts/fs1
+        unzip wads/fsa-*.zip -d artifacts/fsa
+        export VERSION=$(git describe --abbrev=8)
+        if [[ ${VERSION:0:1} == "v" ]]; then
+          export VERSION=${VERSION:1}
+        fi
+        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+    - name: Upload Freedom Scoops
+      uses: actions/upload-artifact@v1
+      with:
+        path: "artifacts/fs1"
+        name: Freedom Scoops ${{steps.buildstep.outputs.VERSION}}
+    - name: Upload Freedom Scoops Arena
+      uses: actions/upload-artifact@v1
+      with:
+        path: "artifacts/fsa"
+        name: Freedom Scoops Arena${{steps.buildstep.outputs.VERSION}}
