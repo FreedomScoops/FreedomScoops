@@ -12,7 +12,7 @@ jobs:
 
     - name: Get full repository history
       run: |
-        git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
+        git remote add freedomscoops https://github.com/freedomscoops/freedomscoops-dev.git
         git fetch --all
   
     - name: Install Prerequisites
