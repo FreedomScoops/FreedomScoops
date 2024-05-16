@@ -35,22 +35,12 @@ jobs:
       id: buildstep
       run: |
         make dist
-        mkdir -p artifacts/fs1
-        mkdir -p artifacts/fsa
-        unzip wads/fs1-*.zip -d artifacts/fs1
-        unzip wads/fsa-*.zip -d artifacts/fsa
-        export VERSION=$(git describe --abbrev=8)
-        if [[ ${VERSION:0:1} == "v" ]]; then
-          export VERSION=${VERSION:1}
-        fi
-        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-    - name: Upload Freedom Scoops
-      uses: actions/upload-artifact@v1
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
       with:
-        path: "artifacts/fs1"
-        name: Freedom Scoops ${{steps.buildstep.outputs.VERSION}}
-    - name: Upload Freedom Scoops Arena
-      uses: actions/upload-artifact@v1
-      with:
-        path: "artifacts/fsa"
-        name: Freedom Scoops Arena${{steps.buildstep.outputs.VERSION}}
+        files: wads/*.zip  # Specify the path to the .zip files directly
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag_name: stable-${{ steps.date.outputs.date }}
+        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
+        prerelease: true
+        body_path: changes.txt
