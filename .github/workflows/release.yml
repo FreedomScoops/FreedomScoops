@@ -54,7 +54,7 @@ jobs:
       with:
         files: "release/*.zip "  # Specify the path to the .zip files directly
         #token: ${{ secrets.GITHUB_TOKEN }}
-        tag_name: nightly-${{ steps.date.outputs.date }}
+        tag_name: stable-${{ steps.date.outputs.date }}
         name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
         prerelease: true
         body_path: changes.txt
