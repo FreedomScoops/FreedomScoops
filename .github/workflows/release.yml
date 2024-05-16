@@ -31,7 +31,7 @@ jobs:
         ./configure
         make
         sudo make install
-
+ 
     - name: Build
       run: |
          make dist
