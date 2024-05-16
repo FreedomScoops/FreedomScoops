@@ -44,6 +44,11 @@ jobs:
       run: |
           mkdir -p release
           cp wads/*.zip release
+          
+    - name: Get upload URL
+      id: get_upload_url
+      run: echo "::set-output name=upload_url::${{ github.event.release.upload_url }}"
+      
 
     - name: Upload release assets
       uses: actions/upload-release-asset@v1
