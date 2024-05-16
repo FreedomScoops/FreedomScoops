@@ -43,12 +43,21 @@ jobs:
       id: date
       run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
 
+    - name: Verify GitHub Token Permissions
+      run: |
+        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        -H "Accept: application/vnd.github.v3+json" \
+        https://api.github.com/user/repos \
+        | jq '.[].full_name'
+      
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         files: wads/*.zip  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
         tag_name: release-${{ steps.date.outputs.date }}
-        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
+        name: Freedom Scoops Release ${{ steps.date.outputs.date }}
         prerelease: true
         body_path: changes.txt
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
