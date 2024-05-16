@@ -45,7 +45,7 @@ jobs:
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
-        files: wad/*.zip  # Specify the path to the .zip files directly
+        files: wads/*.zip  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
         tag_name: stable-${{ steps.date.outputs.date }}
         name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
