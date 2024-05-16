@@ -32,20 +32,28 @@ jobs:
         make
         sudo make install
 
-    - name: Compile with Makefile
+    - name: Build
       run: |
          make dist
 
     - name: Get current date
       id: date
       run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
+      
+    - name: Copy ZIP files from wads folder
+      run: |
+          mkdir -p release
+          cp wads/*.zip release
 
-    - name: Create GitHub Release
-      uses: softprops/action-gh-release@v1
+    - name: Upload release assets
+      uses: actions/upload-release-asset@v1
       with:
-        files: wads/*.zip  # Specify the path to the .zip files directly
-        token: ${{ secrets.GITHUB_TOKEN }}
-        tag_name: fs-${{ steps.date.outputs.date }}
-        name: FS Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
-        prerelease: true
-        body_path: changes.txt
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./release/*.zip
+          asset_name: ${{ github.event.release.tag_name }}.zip
+          asset_content_type: application/zip
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
