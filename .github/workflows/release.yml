@@ -35,10 +35,6 @@ jobs:
     - name: Build
       run: |
          make dist
-
-    - name: Get current date
-      id: date
-      run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
       
     - name: Copy ZIP files from wads folder
       run: |
@@ -46,13 +42,17 @@ jobs:
           cp wads/*.zip release
           ls release 
 
-    - name: Upload Freedom Scoops Release
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
       with:
         files: "release/*.zip"  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag_name: stable-${{ steps.date.outputs.date }}
+        tag_name: nightly-${{ steps.date.outputs.date }}
         name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
         prerelease: true
         body_path: changes.txt
-
 
