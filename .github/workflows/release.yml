@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Release Package
 
 on: [push, pull_request]
 
@@ -39,15 +39,27 @@ jobs:
           export VERSION=${VERSION:1}
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-    - name: Get current date
-      id: date
-      run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
-    - name: Create GitHub Release
-      uses: softprops/action-gh-release@v1
+   
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        files: wads/*.zip  # Specify the path to the .zip files directly
-        token: ${{ secrets.GITHUB_TOKEN }}
-        tag_name: stable-${{ steps.date.outputs.date }}
-        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
-        prerelease: true
+        tag_name: ${{ github.ref }}
+        release_name: Freedom Scoops Release ${{ github.ref }}
         body_path: changes.txt
+        draft: false
+        prerelease: true
+        
+    - name: Upload WADs
+      id: upload_wads
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: wads/*.zip
+        asset_name: wads-${{ github.ref }}-${{ github.run_number }}.zip
+        asset_content_type: application/zip
+      
