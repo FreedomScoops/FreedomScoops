@@ -44,12 +44,11 @@ jobs:
       run: |
           mkdir -p release
           cp wads/*.zip release
-          cd release 
+          ls release 
 
     - name: Upload Freedom Scoops Release
-      uses: softprops/action-gh-release@v1
       with:
-        files: "*.zip"  # Specify the path to the .zip files directly
+        files: "release/*.zip"  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
         tag_name: stable-${{ steps.date.outputs.date }}
         name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
