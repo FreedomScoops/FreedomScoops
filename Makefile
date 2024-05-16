@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 # This adds date to builds, You may comment out for version below. Uncomment to restore it.
-VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo $(shell date '+%m-%d-%Y')-Build) 
+# VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo $(shell date '+%m-%d-%Y')-Build) 
 
 # Only uncomment if this big releese and comment back if not. 
-# VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo v0.99.0-Build) 
+VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo v0.99.0-Build) 
 
 WADS=wads
 ASCIIDOC=asciidoc
