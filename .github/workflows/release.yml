@@ -45,20 +45,15 @@ jobs:
           mkdir -p release
           cp wads/*.zip release
           
-    - name: Get upload URL
-      id: get_upload_url
-      run: echo "::set-output name=upload_url::${{ github.event.release.upload_url }}"
-      
-
-    - name: Upload release assets
+    - name: Upload Freedom Scoops
+      id: upload-release-assets
       uses: actions/upload-release-asset@v1
       with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./release/*.zip
-          asset_name: ${{ github.event.release.tag_name }}.zip
-          asset_content_type: application/zip
-      env:
+        path: "release/*.zip"
+        tag_name: fs-${{ steps.date.outputs.date }}
+        name: FS Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
+        prerelease: true
+        body_path: changes.txt
+    env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
 
