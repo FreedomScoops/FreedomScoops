@@ -1,57 +1,53 @@
-name: release
+name: Continuous Integration
 
 on: [push, pull_request]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Get full repository history
-        run: git fetch --unshallow
-        
-      - name: Install Prerequisites
-        run: |
-          sudo apt update
-          sudo apt install -y python3-pil asciidoc unzip zip ruby dos2unix
-          sudo gem install asciidoctor-pdf --pre
-
-      - name: Install Deutex
-        run: |
-          git clone https://github.com/Doom-Utils/deutex.git
-          cd deutex
-          git checkout v5.2.1
-          sudo apt install -y libpng-dev
-          ./bootstrap
-          ./configure
-          make
-          sudo make install
-
-      - name: Build
-        id: buildstep
-        run: |
-          make dist
-          export VERSION=$(git describe --abbrev=8)
-          if [[ ${VERSION:0:1} == "v" ]]; then
-            export VERSION=${VERSION:1}
-          fi
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-
-      - name: Get current date
-        id: date
-        run: echo "date=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: wads/*.zip
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag_name: release-${{ steps.date.outputs.date }}
-          name: Freedom Scoops Release
-          prerelease: true
-          body_path: changes.txt
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Get full repository history
+      run: |
+        git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
+        git fetch --all
+    - name: Install Prerequisites
+      run: |
+        sudo apt update
+        sudo apt install python3-pil asciidoc unzip zip ruby dos2unix
+        sudo gem install asciidoctor-pdf --pre
+    - name: Install Deutex
+      run: |
+        git clone https://github.com/Doom-Utils/deutex.git
+        cd deutex
+        git checkout v5.2.1
+        sudo apt install libpng-dev
+        ./bootstrap
+        ./configure
+        make
+        sudo make install
+    - name: Build
+      id: buildstep
+      run: |
+        make dist
+        export VERSION=$(git describe --abbrev=8)
+        if [[ ${VERSION:0:1} == "v" ]]; then
+          export VERSION=${VERSION:1}
+        fi
+        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: wad/*.zip  # Specify the path to the .zip files directly
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag_name: stable-${{ steps.date.outputs.date }}
+        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
+        prerelease: true
+        body_path: changes.txt
