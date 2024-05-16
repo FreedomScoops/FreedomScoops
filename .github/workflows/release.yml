@@ -4,15 +4,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
+  build_and_release:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
     - name: Get full repository history
       run: |
         git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
@@ -38,26 +36,17 @@ jobs:
     - name: Compile with Makefile
       run: |
         make dist 
-      
+
     - name: Get current date
       id: date
       run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
 
-    - name: Verify GitHub Token Permissions
-      run: |
-        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        -H "Accept: application/vnd.github.v3+json" \
-        https://api.github.com/user/repos \
-        | jq '.[].full_name'
-      
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         files: wads/*.zip  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
         tag_name: release-${{ steps.date.outputs.date }}
-        name: Freedom Scoops Release ${{ steps.date.outputs.date }}
+        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
         prerelease: true
         body_path: changes.txt
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
