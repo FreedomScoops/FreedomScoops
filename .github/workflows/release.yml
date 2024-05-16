@@ -12,35 +12,45 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
+        
     - name: Get full repository history
       run: |
         git remote add freedomscoops https://github.com/freedomscoops/freedomscoops.git
         git fetch --all
+        
     - name: Install Prerequisites
       run: |
         sudo apt update
-        sudo apt install python3-pil asciidoc unzip zip ruby dos2unix
+        sudo apt install -y python3-pil asciidoc unzip zip ruby dos2unix
         sudo gem install asciidoctor-pdf --pre
+        
     - name: Install Deutex
       run: |
         git clone https://github.com/Doom-Utils/deutex.git
         cd deutex
         git checkout v5.2.1
-        sudo apt install libpng-dev
+        sudo apt install -y libpng-dev
         ./bootstrap
         ./configure
         make
         sudo make install
+        
     - name: Build
       id: buildstep
       run: |
         make dist
+        
+    - name: Debug Token
+      run: echo "GITHUB_TOKEN is ${{ secrets.GITHUB_TOKEN }}"  # Debugging step to ensure token is set (remove after verifying)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
         files: wads/*.zip  # Specify the path to the .zip files directly
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag_name: stable-${{ steps.date.outputs.date }}
-        name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
+        tag_name: stable-${{ github.run_number }}
+        name: Freedom Scoops Release ${{ github.run_number }}
         prerelease: true
         body_path: changes.txt
