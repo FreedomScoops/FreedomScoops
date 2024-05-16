@@ -36,7 +36,6 @@ jobs:
         sudo make install
         
     - name: Build
-      id: buildstep
       run: |
         make dist
         
