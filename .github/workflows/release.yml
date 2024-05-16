@@ -45,15 +45,17 @@ jobs:
           mkdir -p release
           cp wads/*.zip release
           
-    - name: Upload Freedom Scoops
-      id: upload-release-assets
-      uses: actions/upload-release-asset@v1
+       
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
       with:
-        path: "release/*.zip"
-        tag_name: fs-${{ steps.date.outputs.date }}
-        name: FS Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
-        prerelease: true
-        body_path: changes.txt
-    env:
+          files: |
+            release/*.zip
+          tag_name: fs-${{ steps.date.outputs.date }}
+          name: FS Release ${{ steps.date.outputs.date }}
+          body_path: changes.txt
+          draft: false
+          prerelease: true
+      env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
