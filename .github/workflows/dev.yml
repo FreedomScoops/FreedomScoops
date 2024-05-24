@@ -56,5 +56,5 @@ jobs:
         tag_name: dev
         name: Freedom Scoops Auto Builds ${{ steps.date.outputs.date }} #${{ github.run_number }}
         prerelease: true
-        body_path: changes.txt
+        body_path: .github/changes.txt
 
