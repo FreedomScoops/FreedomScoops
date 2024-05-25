@@ -48,6 +48,29 @@ jobs:
       id: date
       run: echo "date=$(date +'%m-%d-%Y')" >> $GITHUB_OUTPUT
 
+    - name: Delete Previous Release
+      uses: actions/github-script@v6
+      id: delete_release
+      with:
+        script: |
+          const releases = await github.repos.listReleases({
+            owner: context.repo.owner,
+            repo: context.repo.repo
+          });
+          const release = releases.data.find(release => release.tag_name === 'dev');
+          if (release) {
+            await github.repos.deleteRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: release.id
+            });
+            await github.git.deleteRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'tags/dev'
+            });
+          }
+   
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1
       with:
