@@ -49,7 +49,6 @@ jobs:
         sudo apt update
         sudo apt install python3-pil asciidoc unzip zip ruby dos2unix
         sudo gem install asciidoctor-pdf --pre
-        curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
         
     - name: Install Deutex
       run: |
@@ -64,8 +63,9 @@ jobs:
  
     - name: Build
       run: |
+         curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
          make dist
-      
+
     - name: Copy ZIP files from wads folder
       run: |
           mkdir -p release
