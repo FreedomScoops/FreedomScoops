@@ -8,7 +8,7 @@ VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo $(shell date
 
 WADS=wads
 ASCIIDOC=asciidoc
-ADOCOPTS=--backend=html5 --conf-file=.adoc-layout.conf
+ADOCOPTS=--backend=html5 --conf-file=adoc-layout.conf
 ASCIIDOC_MAN=a2x -f manpage
 CPP=scripts/simplecpp
 DEUTEX=deutex
@@ -125,15 +125,22 @@ manual/freedoom-manual-%.pdf: manual/freedoom-manual-%.adoc
 COPYING.txt: COPYING.adoc
 	unix2dos --add-bom --newfile $< $@
 
+# TODO: The CREDITS.TXT DOCS needs to be moved to CREDITS folder in future.
+FD:
+    @curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
+
 CREDITS.txt: CREDITS
 	unix2dos --add-bom --newfile $< $@
 
-#CREDITS-MUSIC.txt: CREDITS-MUSIC
+CREDITS-MUSIC.txt: CREDITS-MUSIC
 	#unix2dos --add-bom --newfile $< $@
 
-#HTMLDOCS=NEWS.html README.html
-#TEXTDOCS=COPYING.txt CREDITS.txt #CREDITS-MUSIC.txt
-#DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
+FDCREDITS.txt: 
+	unix2dos --add-bom --newfile $< $@
+
+HTMLDOCS=NEWS.html README.html
+TEXTDOCS=COPYING.txt CREDITS.txt CREDITS-MUSIC.txt FDCREDITS.txt 
+DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
 	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
@@ -155,7 +162,7 @@ gimp-palette: doom.gpl
 
 clean:
 	$(RM) *.html doom.gpl $(OBJS) \
-	      ./COPYING.txt ./CREDITS.txt ./CREDITS-MUSIC.txt \
+	      ./COPYING.txt ./CREDITS.txt ./CREDITS-MUSIC.txt ./FDCREDITS.txt \
 	      ./wadinfo_FSFC1.txt \
 	      ./wadinfo_FSSC1.txt \
 	      ./wadinfo_freedm.txt \
@@ -320,7 +327,7 @@ uninstall-freedm:
 	      "$(target)$(mandir)/man6/freedm.6"                                \
 	      "$(target)$(waddir)/freedm.wad"                                   \
 	      "$(target)$(docdir)/freedm/CREDITS"                               \
-	    #  "$(target)$(docdir)/freedm/CREDITS-MUSIC"                         \
+	      "$(target)$(docdir)/freedm/CREDITS-MUSIC"                         \
 	      "$(target)$(docdir)/freedm/COPYING"                               \
 	      "$(target)$(docdir)/freedm/NEWS.html"                             \
 	      "$(target)$(docdir)/freedm/README.html"                           \
@@ -345,7 +352,7 @@ uninstall-freedoom:
 	      "$(target)$(waddir)/freedoom1.wad"                                \
 	      "$(target)$(waddir)/freedoom2.wad"                                \
 	      "$(target)$(docdir)/freedoom/CREDITS"                             \
-	     # "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
+	      "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
 	      "$(target)$(docdir)/freedoom/COPYING"                             \
 	      "$(target)$(docdir)/freedoom/NEWS.html"                           \
 	      "$(target)$(docdir)/freedoom/README.html"                         \
