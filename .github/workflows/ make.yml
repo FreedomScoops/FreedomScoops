@@ -33,6 +33,7 @@ jobs:
     - name: Build
       id: buildstep
       run: |
+        curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
         make dist
         mkdir -p artifacts/fs1
         mkdir -p artifacts/fsa
