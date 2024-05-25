@@ -57,5 +57,5 @@ jobs:
         tag_name: stable-${{ steps.date.outputs.date }}
         name: Freedom Scoops Release ${{ steps.date.outputs.date }} #${{ github.run_number }}
         prerelease: true
-        body_path: changes.txt
+        body_path: .github/notes/stable.txt
 
