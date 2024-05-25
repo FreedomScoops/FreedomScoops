@@ -17,20 +17,27 @@ jobs:
       id: delete-assets
       with:
         script: |
-          const release = await github.repos.getReleaseByTag({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            tag: 'dev'
+          const tag = 'dev';
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+
+          // Get the release by tag
+          const release = await github.rest.repos.getReleaseByTag({
+            owner,
+            repo,
+            tag
           });
 
+          // Delete each asset in the release
           const assets = release.data.assets;
           for (const asset of assets) {
-            await github.repos.deleteReleaseAsset({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            await github.rest.repos.deleteReleaseAsset({
+              owner,
+              repo,
               asset_id: asset.id
             });
           }
+
 
     - name: Get full repository history
       run: |
