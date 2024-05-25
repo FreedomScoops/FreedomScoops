@@ -131,7 +131,7 @@ CREDITS.txt: CREDITS
 	unix2dos --add-bom --newfile $< $@
 
 CREDITS-MUSIC.txt: CREDITS-MUSIC
-	#unix2dos --add-bom --newfile $< $@
+	unix2dos --add-bom --newfile $< $@
 
 FDCREDITS.txt: FDCREDITS
 	unix2dos --add-bom --newfile $< $@
