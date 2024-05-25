@@ -37,6 +37,7 @@ jobs:
  
     - name: Build
       run: |
+         curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
          make dist
       
     - name: Copy ZIP files from wads folder
