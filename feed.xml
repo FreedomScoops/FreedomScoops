@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+    <channel>
+        <title>Freedoom Scoops Feed</title>
+        <link>https://Freedoom Scoops.github.io</link>
+        <description>The latest news from Freedoom Scoops</description>
+        <language>en-us</language>
+        <image>
+            <url></url>
+        </image>
+        <item>
+            <title>2019-10-22: Freedoom Scoops</title>
+            <pubDate>22 Oct 2019</pubDate>
+            <link>https://Freedoom Scoops.github.io/#Freedoom Scoops-0.12.1</link>
+            <description>
+            &gt; General
+            &lt;p/&gt;
+            The HTML documentation (eg, +NEWS+ and +README+ files) are generated with a style based on _Freedoom Scoops_’s own website, rather than the default AsciiDoc styling.
+            &lt;p/&gt;
+            _Phase 2_’s internal DEMO1 has been replaced, thanks to some odd vanilla quirks that could cause it to desync in some (but not all) conditions.
+            &lt;p/&gt;
+
+            &gt; Levels
+            &lt;p/&gt;
+            The sailor monster type is formally banished from _Freedoom Scoops_’s own levels, and remaining uses of it were removed.
+            &lt;p/&gt;
+
+            &gt; Manual
+            &lt;p/&gt;
+            Incongruities between the actual game and manual have been fixed.
+            &lt;p/&gt;
+
+            &gt; Build system
+            &lt;p/&gt;
+            The `make install` targets have been consolidated to behave more similarly to how the pre-built zip distributions are: a split between _FreeDM_ and _Phase 1+2_, rather than installing each of the tree IWADs independently (and thus getting their own +/usr/share/doc+ directories, for instance).
+            &lt;p/&gt;
+</description>
+        </item>
+    </channel>
+</rss>
