@@ -18,7 +18,7 @@ NODE_BUILDER=ZenNode
 NODE_BUILDER_LEVELS=e?m? dm?? map??
 LEGACY_TRANSPARENCY_INDEX=255
 LEGACY_TRANSPARENCY_REPLACEMENT=133
-#MANUAL_ADOC_FILES=$(wildcard manual/freedoom-manual-??.adoc)
+MANUAL_ADOC_FILES=$(wildcard manual/fs-manual-??.adoc)
 MANUAL_PDF_FILES=$(subst .adoc,.pdf,$(MANUAL_ADOC_FILES))
 
 FSFC1=$(WADS)/FSFC1.wad
@@ -122,8 +122,8 @@ $(FREEDOOM2): wadinfo_phase2.txt subdirs
 %.html: %.adoc
 	$(ASCIIDOC) $(ADOCOPTS) $<
 
-#manual/freedoom-manual-%.pdf: manual/freedoom-manual-%.adoc
-#	$(MAKE) -C manual $(subst manual/,,$@)
+manual/fs-manual-%.pdf: manual/fs-manual-%.adoc
+	$(MAKE) -C manual $(subst manual/,,$@)
 
 COPYING.txt: COPYING.adoc
 	unix2dos --add-bom --newfile $< $@
