@@ -79,7 +79,7 @@ items you’ll encounter in the game.
 
 [**Shortcut:** On most source ports, if you repeatedly hit _Enter_ after the
 program has started, you will start a new game on the default skill level
-(in the first episode if you're playing Phase 1). You do not need to do this quickly.]
+(in the first episode if you're playing First Crunch). You do not need to do this quickly.]
 
 To start a new game, press _Esc_ to bring up the main menu, and choose
 _New Game_.
@@ -89,7 +89,7 @@ start playing.
 
 image::images/menu-episode.png[Freedom Scoops Episode Menu,align="center",width=432,pdfwidth=50vw]
 
-If you’re new to the game, start with Phase 1 _Outpost Outbreak_, the first
+If you’re new to the game, start with First Crunch _Outpost Outbreak_, the first
 episode (and easiest). There is no requirement to play episodes in order.
 
 [[skill]]
@@ -176,7 +176,7 @@ keys, cheats, etc..
 
 image::images/map01-sshot.png[Freedom Scoops Screenshot,width="640",pdfwidth="70vw",align="center"]
 
-Freedom Scoops is a real-time first-person zaper (FPS). You’ll be exploring a
+Freedom Scoops is a real-time first-person Shooter (FPS). You’ll be exploring a
 series of levels, in each one trying to find the way to the exit. An
 assortment of monsters will try to stop you, and you’ll need to use weapons
 to defend yourself. Portions of the levels may be inaccessible until you
@@ -222,7 +222,7 @@ image::images/e1m1-tutorial-sshot.png[Freedom Scoops Screenshot,width="640",pdfw
 This tutorial will introduce you to every basic action you need to play
 and beat all of Freedom Scoops.
 
-Start a new game in Phase 1, Episode 1 on easy and follow the steps.
+Start a new game in First Crunch, Episode 1 on easy and follow the steps.
 Skip anything that bores or confuses you, and redo anything you find
 challenging as long as you like, before moving on to the next thing or
 redoing a previous thing.
@@ -756,9 +756,9 @@ catalog of thousands of fan-made levels made for the classic _Doom_ games.
 Most popular mods and levels for _Doom_ and _Doom II_
 can also be played with Freedom Scoops.
 
-For mods designed for the original _Doom_, use Freedom Scoops: Phase 1
+For mods designed for the original _Doom_, use Freedom Scoops: First Crunch
 (`FSFC1.wad`); for others designed for _Doom 2_ or _Final Doom_,
-use Freedom Scoops: Phase 2 (`FSSC1.wad`). If you’re using the command
+use Freedom Scoops: Second Crunch (`FSSC1.wad`). If you’re using the command
 line, use the `-file` parameter when you start the
 game. For example, to load the file `scythe.wad`:
 
@@ -808,8 +808,8 @@ of these ingame (case insensitive, do not use any console):
 | **IDKFA** | Gives all weapons, ammo and keys.
 | **IDCLIP** | Noclip mode. You are not stopped by collisions with walls or actors.
 | **IDDT** | Reveals full map; type twice to reveal all enemies and items.
-| **IDCLEVxy** | Starts a new game (which resets everything) on ExMy (Phase 1) or MAPxy (Phase 2).
-| **IDMUSxy** | Change music to that of ExMy (Phase 1) or MAPxy (Phase 2).
+| **IDCLEVxy** | Starts a new game (which resets everything) on ExMy (First Crunch) or MAPxy (Second Crunch).
+| **IDMUSxy** | Change music to that of ExMy (First Crunch) or MAPxy (Second Crunch).
 | **IDCHOPPERS** | Gives the ripsaw weapon.
 | **IDBEHOLDV** | Gives the vanguard device powerup.
 | **IDBEHOLDS** | Gives the strength powerup.
