@@ -9,12 +9,12 @@
 #                 fr    French
 
 ASCIIDOCTOR_FLAGS = -a pdf-page-size=A5
-MANUAL_ADOC_FILES=$(wildcard freedoom-manual-??.adoc)
+MANUAL_ADOC_FILES=$(wildcard fs-manual-??.adoc)
 MANUAL_PDF_FILES=$(subst .adoc,.pdf,$(MANUAL_ADOC_FILES))
 
 all: $(MANUAL_PDF_FILES)
 
-freedoom-manual-%.pdf: fs-manual-%.adoc
+fs-manual-%.pdf: fs-manual-%.adoc
 	-asciidoctor-pdf $(ASCIIDOCTOR_FLAGS) $< -o $@
 
 clean:
