@@ -14,7 +14,7 @@ MANUAL_PDF_FILES=$(subst .adoc,.pdf,$(MANUAL_ADOC_FILES))
 
 all: $(MANUAL_PDF_FILES)
 
-freedoom-manual-%.pdf: freedoom-manual-%.adoc
+freedoom-manual-%.pdf: fs-manual-%.adoc
 	-asciidoctor-pdf $(ASCIIDOCTOR_FLAGS) $< -o $@
 
 clean:
