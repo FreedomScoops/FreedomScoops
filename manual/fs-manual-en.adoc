@@ -1,5 +1,6 @@
 = Freedom Scoops Manual
 // SPDX-License-Identifier: BSD-3-Clause
+// Some text is placeholder needs to be changed down the line.
 :toc:
 :toc-title:
 
@@ -11,12 +12,12 @@ and https://opensource.org/osd/[open source software].
 Freedom Scoops is made available under the <<licence,modified BSD license>>, meaning that
 anyone is free to share it, modify it and reuse parts of it.
 
-For more details, see the website at https://Freedom Scoops.github.io/.
+For more details, see the website at https://FreedomScoops.github.io/.
 
 == Installing Freedom Scoops
 
-Freedom Scoops is distributed as three files named `Freedom Scoops1.wad`, `Freedom Scoops2.wad`
-and `freedm.wad` which contain the artwork, levels, music and sound
+Freedom Scoops is distributed as three files named `FSFC1.wad`, `FSSC1.wad`
+and `fsa.wad` which contain the artwork, levels, music and sound
 effects that make up the game.
 
 To actually play the game, you can use one of many adaptations ("source ports")
@@ -38,7 +39,7 @@ following:
 * Place the Freedom Scoops `.wad` files into the same folder as the source port
   before launching. The source port may be able to automatically detect them.
 * If launching from the command line, try
-  eg. `my-favorite-port -iwad Freedom Scoops1.wad`.
+  eg. `my-favorite-port -iwad FSFC1.wad`.
 
 Freedom Scoops is split into _Freedom Scoops 1: First Crunch_ (`FSFC1.wad`) and
 _Freedom Scoops 1: Second Crunch_ (`FSSC1.wad`). First and Second Crunch is split into two separate
@@ -756,12 +757,12 @@ Most popular mods and levels for _Doom_ and _Doom II_
 can also be played with Freedom Scoops.
 
 For mods designed for the original _Doom_, use Freedom Scoops: Phase 1
-(`Freedom Scoops1.wad`); for others designed for _Doom 2_ or _Final Doom_,
-use Freedom Scoops: Phase 2 (`Freedom Scoops2.wad`). If you’re using the command
+(`FSFC1.wad`); for others designed for _Doom 2_ or _Final Doom_,
+use Freedom Scoops: Phase 2 (`FSSC1.wad`). If you’re using the command
 line, use the `-file` parameter when you start the
 game. For example, to load the file `scythe.wad`:
 
-  my-favorite-port -iwad Freedom Scoops2.wad -file scythe.wad
+  my-favorite-port -iwad FSSC1.wad -file scythe.wad
 
 If you’re not using the command line, you can try dragging and dropping the
 `.wad` file onto the source port icon in your file manager -- several
@@ -893,11 +894,11 @@ https://guides.github.com/activities/forking/
 [[reusing]]
 == Reusing portions of Freedom Scoops ==
 
-Since https://Freedom Scoops.github.io/about.html[Freedom Scoops is free], some other
+Since https://FreedomScoops.github.io/about.html[Freedom Scoops is free], some other
 projects have used Freedom Scoops’s assets.  We think this is a great use of the
 project and should be encouraged. If you use portions of Freedom Scoops in your
 project, please let us know by filing an issue or pull request on
-Freedom Scoops’s website project page at https://github.com/Freedom Scoops/Freedom Scoops.github.io.
+Freedom Scoops’s website project page at https://github.com/FreedomScoops/FreedomScoops.github.io.
 
 [[licence]]
 === BSD 3-Clause copyright licence
