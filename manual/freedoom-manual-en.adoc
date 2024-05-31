@@ -1,21 +1,21 @@
-= Freedoom Manual
+= Freedom Scoops Manual
 // SPDX-License-Identifier: BSD-3-Clause
 :toc:
 :toc-title:
 
-image::../graphics/titlepic/titlepic.png[Freedoom Title Image,align="center",width=380,pdfwidth=50vw]
+image::../graphics/titlepic/titlepic.png[Freedom Scoops Title Image,align="center",width=380,pdfwidth=50vw]
 
-Welcome to Freedoom, a complete game that is
+Welcome to Freedom Scoops, a complete game that is
 https://www.gnu.org/philosophy/free-sw.html[free]
 and https://opensource.org/osd/[open source software].
-Freedoom is made available under the <<licence,modified BSD license>>, meaning that
+Freedom Scoops is made available under the <<licence,modified BSD license>>, meaning that
 anyone is free to share it, modify it and reuse parts of it.
 
-For more details, see the website at https://freedoom.github.io/.
+For more details, see the website at https://Freedom Scoops.github.io/.
 
-== Installing Freedoom
+== Installing Freedom Scoops
 
-Freedoom is distributed as three files named `freedoom1.wad`, `freedoom2.wad`
+Freedom Scoops is distributed as three files named `Freedom Scoops1.wad`, `Freedom Scoops2.wad`
 and `freedm.wad` which contain the artwork, levels, music and sound
 effects that make up the game.
 
@@ -35,30 +35,29 @@ Setup depends on the source port you use, and it’s best to refer to the
 instructions for that source port. Generally though, you can try one of the
 following:
 
-* Place the Freedoom `.wad` files into the same folder as the source port
+* Place the Freedom Scoops `.wad` files into the same folder as the source port
   before launching. The source port may be able to automatically detect them.
 * If launching from the command line, try
-  eg. `my-favorite-port -iwad freedoom1.wad`.
+  eg. `my-favorite-port -iwad Freedom Scoops1.wad`.
 
-Freedoom is split into _Freedoom: Phase 1_ (`freedoom1.wad`) and
-_Freedoom: Phase 2_ (`freedoom2.wad`). _Phase 1_ is split into four separate
-episodes of eight levels each, while _Phase 2_ is a single, 30 level campaign.
-This gives 62 levels to play through, plus the secret levels -- if
-you can discover how to reach them.
+Freedom Scoops is split into _Freedom Scoops 1: First Crunch_ (`FSFC1.wad`) and
+_Freedom Scoops 1: Second Crunch_ (`FSSC1.wad`). First and Second Crunch is split into two separate
+wads each with five levels, This gives 10 levels to play through. 
 
-FreeDM (`freedm.wad`) is a monster-free set of levels, made specifically
+Freedom Scoops Arena (`FSA.wad`) is a monster-free set of levels, made specifically
 for player-versus-player. For how to host a multiplayer game,
-check the instructions on your source port.
+check the instructions on your source port. plus the secret levels -- if
+you can discover how to reach them.
 
 <<<
 
 [[menus]]
-== Using the Freedoom Menus
+== Using the Freedom Scoops Menus
 
 The main menu can be brought up at any time by pressing the
 _Esc_ key on your keyboard.
 
-image::images/menu-mainmenu.png[Freedoom Main Menu,align="center",width=380,pdfwidth=50vw]
+image::images/menu-mainmenu.png[Freedom Scoops Main Menu,align="center",width=380,pdfwidth=50vw]
 
 [cols="2,5",width="100%",align="center",valign="middle"]
 |==========================
@@ -87,7 +86,7 @@ _New Game_.
 When starting a new game, you may be prompted to choose which episode to
 start playing.
 
-image::images/menu-episode.png[Freedoom Episode Menu,align="center",width=432,pdfwidth=50vw]
+image::images/menu-episode.png[Freedom Scoops Episode Menu,align="center",width=432,pdfwidth=50vw]
 
 If you’re new to the game, start with Phase 1 _Outpost Outbreak_, the first
 episode (and easiest). There is no requirement to play episodes in order.
@@ -145,7 +144,7 @@ in `chocolate-setup` under "Vanilla savegame limit".]
 
 === Quitting the game
 
-When you’re finished playing Freedoom, press _Esc_ to bring up the main
+When you’re finished playing Freedom Scoops, press _Esc_ to bring up the main
 menu and select _Quit Game_ to exit. (You may want to <<savegame, save
 your game>> first.)
 
@@ -174,9 +173,9 @@ keys, cheats, etc..
 
 == How to Play
 
-image::images/map01-sshot.png[Freedoom Screenshot,width="640",pdfwidth="70vw",align="center"]
+image::images/map01-sshot.png[Freedom Scoops Screenshot,width="640",pdfwidth="70vw",align="center"]
 
-Freedoom is a real-time first-person shooter (FPS). You’ll be exploring a
+Freedom Scoops is a real-time first-person zaper (FPS). You’ll be exploring a
 series of levels, in each one trying to find the way to the exit. An
 assortment of monsters will try to stop you, and you’ll need to use weapons
 to defend yourself. Portions of the levels may be inaccessible until you
@@ -188,7 +187,7 @@ A table of the core in-game controls follows. **_Doom_'s defaults are widely
 considered suboptimal;** check your source port for how to reconfigure them.
 Common alternatives are provided but no single "best" solution works for
 everyone -- you need to experiment. At minimum you must be comfortable
-moving in any one of the four directions while turning and shooting.
+moving in any one of the four directions while turning and zaping
 
 [options="header",cols="1,1,1,1",width="100%",align="center",halign="center"]
 |==========================
@@ -217,10 +216,10 @@ going slow only helps for increased precision.
 
 === A Tutorial
 
-image::images/e1m1-tutorial-sshot.png[Freedoom Screenshot,width="640",pdfwidth="70vw",align="center"]
+image::images/e1m1-tutorial-sshot.png[Freedom Scoops Screenshot,width="640",pdfwidth="70vw",align="center"]
 
 This tutorial will introduce you to every basic action you need to play
-and beat all of Freedoom.
+and beat all of Freedom Scoops.
 
 Start a new game in Phase 1, Episode 1 on easy and follow the steps.
 Skip anything that bores or confuses you, and redo anything you find
@@ -258,9 +257,9 @@ redoing a previous thing.
   the column playing "Peek-A-Boo" with it. Mess with distance and timing.
   Try to stay pointed at the column even when you can't see it.
 
-. Play around with the above for a bit. Try pressing the Fire key to shoot at
+. Play around with the above for a bit. Try pressing the Fire key to zap at
   the column, both standing still and moving, and note where and when
-  the bullet puffs appear. (Stop shooting before your ammo count goes below
+  the bullet puffs appear. (Stop zaping before your ammo count goes below
   30 or so -- you will need those for later!)
 
 . Tap the 1 key on the keyboard to switch to your fist, and try to punch the
@@ -293,7 +292,7 @@ redoing a previous thing.
 At the bottom of the screen, you’ll see the status bar, which is divided into
 the following sections:
 
-image::images/status-bar.png[Freedoom Status Bar,width="640",pdfwidth="70vw",align="center"]
+image::images/status-bar.png[Freedom Scoops Status Bar,width="640",pdfwidth="70vw",align="center"]
 
 [cols="2,5",width="90%",align="center",valign="middle"]
 |==========================
@@ -303,7 +302,7 @@ weapon.
 <<health,health section>> for power-ups you can find to replenish your health.
 | **Arms** | Which weapons you’ve found so far. Check out the
 <<weapons,weapons section>> for more information.
-| **Freedoomguy** | A quick visual indication of how your health is.
+| **Freedom Scoopsguy** | A quick visual indication of how your health is.
 | **Armor** | The more armor you have, the less your health will suffer if
 you’re injured. See the <<armor,armor section>> for more information.
 | **Ammo counts** | How much you’re carrying of each of the <<ammo,four types of
@@ -347,11 +346,11 @@ also works well as a melee weapon for cutting through flesh. _Ammo:_ None
 | **Handgun** +
 image:../sprites/pista0.png[Handgun] |
 2 | Your starter weapon. Its main purpose is to let you fight your way to
-a better weapon, and to hit shootable switches without wasting a second bullet.
+a better weapon, and to hit zapable switches without wasting a second bullet.
 _Ammo:_ Bullets
 | **Pump-action Shotgun** +
 image:../sprites/shota0.png[Pump-action Shotgun] |
-3 | Shoots seven pellets in a fan pattern, letting you hit multiple
+3 | zaps seven pellets in a fan pattern, letting you hit multiple
 targets or one big one. _Ammo:_ Shells
 | **Double-barrelled Shotgun** +
 image:../sprites/sgn2a0.png[Double-barrelled Shotgun] |
@@ -378,7 +377,7 @@ _Ammo:_ Energy
 image:../sprites/bfuga0.png[SKAG 1337] |
 7 | Experimental weapon that launches a single massive polaric energy ball,
 then releases a secondary energy blast in the same direction!
-Slow to shoot, but worth the wait. _Ammo:_ Energy
+Slow to zap, but worth the wait. _Ammo:_ Energy
 |==========================
 
 [[ammo]]
@@ -460,7 +459,7 @@ access to shortcuts or secret areas.
 
 === Color blind accessibility
 
-Freedoom's keys are designed to be distinguishable not just by color but
+Freedom Scoops's keys are designed to be distinguishable not just by color but
 also by shape, to make the game more accessible to color-blind players.
 Each key color has an associated shape:
 
@@ -601,7 +600,7 @@ image:images/monster-assault-tripod.png[Assault Tripod,100,100,width=100%]
 
 === Using the map
 
-When exploring Freedoom’s levels, it is sometimes possible to get lost,
+When exploring Freedom Scoops’s levels, it is sometimes possible to get lost,
 especially if the level is particularly large or complex. Fortunately, the
 map is available to help you find your way. Press the _Tab_ key during play to
 bring up the map.
@@ -653,7 +652,7 @@ potential for chain reactions when several barrels are clustered together. |
 image:images/hazard-barrels.png[Barrels,150,150,width=100%]
 | **Damaging Floors** |
 Red-hot lava and radioactive sludge are just two of the types of damaging floor
-you can encounter in Freedoom’s levels. If walking over it is necessary, try to
+you can encounter in Freedom Scoops’s levels. If walking over it is necessary, try to
 find yourself a <<specialitems,rescue suit>>, a shorter path through the area,
 or way to run over the area without touching the floor. |
 image:images/hazard-slime.png[Radioactive slime,150,150,width=100%]
@@ -700,7 +699,7 @@ into some of these suggestions:
 
 * Do *not* button-mash! Nearly every weapon has a slight cooldown period
   when you let go of the Fire key, costing you time and giving your target
-  more opportunity to return fire. Holding down Fire will let you shoot
+  more opportunity to return fire. Holding down Fire will let you zap
   any weapon continuously until your ammo runs out or you let go.
 
 * Take cover! Monsters only attack when you’re in their line of sight. You’ll
@@ -709,7 +708,7 @@ into some of these suggestions:
   actively hitting with your own weapon. Cover is particularly important
   when facing certain monsters which can “lock on” to you (minigun zombie;
   necromancer) and finding cover may be the only way to get them to stop
-  shooting long enough for you to return fire. Monsters with guns are also
+  zaping long enough for you to return fire. Monsters with guns are also
   not any better or worse at hitting you whether you are moving or standing
   still, so you can't continuously dodge on open ground the
   way you can against visible projectiles.
@@ -724,7 +723,7 @@ into some of these suggestions:
 * If a monster gets injured by another monster, it’ll retaliate against the
   one that injured it (this is called _monster in-fighting_). If faced with a
   crowd of enemies, an effective strategy can be to stand in just the right
-  place so that those at the back shoot those at the front. Do it right and
+  place so that those at the back zap those at the front. Do it right and
   they’ll spend more time fighting each other than fighting you, and the
   survivors will be significantly weakened.  Be aware though, that a monster
   cannot be injured by a visible projectile launched by another of the same species.
@@ -748,21 +747,21 @@ into some of these suggestions:
 [[wads]]
 == Playing with fan-made WADs and mods ==
 
-.Scythe MAP09 playing with Freedoom.
+.Scythe MAP09 playing with Freedom Scoops.
 image::images/scythe-map09.png[Scythe MAP09,width="640",pdfwidth="70vw",align="center"]
 
-One of the nicest features of Freedoom is its compatibility with the
+One of the nicest features of Freedom Scoops is its compatibility with the
 catalog of thousands of fan-made levels made for the classic _Doom_ games.
 Most popular mods and levels for _Doom_ and _Doom II_
-can also be played with Freedoom.
+can also be played with Freedom Scoops.
 
-For mods designed for the original _Doom_, use Freedoom: Phase 1
-(`freedoom1.wad`); for others designed for _Doom 2_ or _Final Doom_,
-use Freedoom: Phase 2 (`freedoom2.wad`). If you’re using the command
+For mods designed for the original _Doom_, use Freedom Scoops: Phase 1
+(`Freedom Scoops1.wad`); for others designed for _Doom 2_ or _Final Doom_,
+use Freedom Scoops: Phase 2 (`Freedom Scoops2.wad`). If you’re using the command
 line, use the `-file` parameter when you start the
 game. For example, to load the file `scythe.wad`:
 
-  my-favorite-port -iwad freedoom2.wad -file scythe.wad
+  my-favorite-port -iwad Freedom Scoops2.wad -file scythe.wad
 
 If you’re not using the command line, you can try dragging and dropping the
 `.wad` file onto the source port icon in your file manager -- several
@@ -821,15 +820,15 @@ of these ingame (case insensitive, do not use any console):
 
 <<<
 
-== Freedoom is about freedom ==
+== Freedom Scoops is about freedom ==
 
-When people hear about Freedoom, they often assume the name refers to price --
+When people hear about Freedom Scoops, they often assume the name refers to price --
 that the only thing this project aims to do is to provide an alternative to
 Doom that can be obtained without paying money. But this is not the case.
 
 The word "free" has two different meanings in English. We say "free" to mean
 that something costs nothing, but we also use it to refer to freedom -- like
-"free speech" or "the free press". Freedoom is about the latter. That might
+"free speech" or "the free press". Freedom Scoops is about the latter. That might
 sound confusing. What does it mean?
 
 Imagine a world where artists could only buy paints from a single company. A
@@ -859,25 +858,25 @@ Everybody deserves to be able to experience the wonder that is Doom and take
 part in its vibrant modding community that has endured for so many years. But
 that community also deserves its freedom and independence. By providing a free
 alternative that anyone can play, share, modify and reuse, we hope that's
-something that Freedoom can help to provide.
+something that Freedom Scoops can help to provide.
 
-== Contributing to Freedoom ==
+== Contributing to Freedom Scoops ==
 
-Freedoom is a https://www.gnu.org/philosophy/free-sw.html[free content]
+Freedom Scoops is a https://www.gnu.org/philosophy/free-sw.html[free content]
 project contributed to by many users around the world. It is available as both
 free in cost (free as in free beer) and in modification and redistribution
 rights (free as in free speech) to end users, provided that the original
 software license is included and/or viewable by users of modified or
 redistributed versions.
 
-If you’d like to contribute to the Freedoom project, please check out
+If you’d like to contribute to the Freedom Scoops project, please check out
 the following community hubs:
 
-* Freedoom's source repository: +
-https://github.com/freedoom/freedoom
+* Freedom Scoops's source repository: +
+https://github.com/Freedom Scoops/Freedom Scoops
 
-* the Freedoom discussion forum on Doomworld: +
-https://www.doomworld.com/forum/17-freedoom/
+* the Freedom Scoops discussion forum on Doomworld: +
+https://www.doomworld.com/forum/17-Freedom Scoops/
 
 * the Discord guild: +
 https://discord.gg/9DA3fut
@@ -892,19 +891,19 @@ https://guides.github.com/activities/forking/
 
 
 [[reusing]]
-== Reusing portions of Freedoom ==
+== Reusing portions of Freedom Scoops ==
 
-Since https://freedoom.github.io/about.html[Freedoom is free], some other
-projects have used Freedoom’s assets.  We think this is a great use of the
-project and should be encouraged. If you use portions of Freedoom in your
+Since https://Freedom Scoops.github.io/about.html[Freedom Scoops is free], some other
+projects have used Freedom Scoops’s assets.  We think this is a great use of the
+project and should be encouraged. If you use portions of Freedom Scoops in your
 project, please let us know by filing an issue or pull request on
-Freedoom’s website project page at https://github.com/freedoom/freedoom.github.io.
+Freedom Scoops’s website project page at https://github.com/Freedom Scoops/Freedom Scoops.github.io.
 
 [[licence]]
 === BSD 3-Clause copyright licence
 
 Copyright © 2001-2024
-Contributors to the Freedoom project.  All rights reserved.
+Contributors to the Freedom Scoops project.  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -915,7 +914,7 @@ met:
   * Redistributions in binary form must reproduce the above copyright
     notice, this list of conditions and the following disclaimer in the
     documentation and/or other materials provided with the distribution.
-  * Neither the name of the Freedoom project nor the names of its
+  * Neither the name of the Freedom Scoops project nor the names of its
     contributors may be used to endorse or promote products derived from
     this software without specific prior written permission.
 
@@ -931,5 +930,5 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-For a list of contributors to the Freedoom project, see the file
+For a list of contributors to the Freedom Scoops project, see the file
 CREDITS.
