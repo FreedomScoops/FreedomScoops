@@ -259,5 +259,10 @@ just "Bob Smith" in the above example.
 === Community
 We welcome anyone who is interested in the development of Freedom Scoops. Join the Luke Ken Discord community, where you can connect with other fans of the game, share your own mods and levels, and get help and support from other members. Click https://discord.gg/TSFYwTPqUk/[here] to join.
 
+## Acknowledgements
+- **FS Contributors** Thanks to all the people that are helping out with Freedom Scoops..
+- **Digital Cafe:** For creating the original Chex Quest game, which served as the inspiration for this project.
+- **Freedoom:** For providing the free software game that inspired this project, as well as the tools that serve as its foundation.
+
 === Resources that was used for the project
 The https://freedoom.github.io/[Freedoom] project to make the game and is forked for Freedom Scoops.
