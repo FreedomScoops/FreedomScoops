@@ -186,9 +186,11 @@ _Doom_ graphics, as to remain compatible with mods.  Otherwise, levels
 may end up looking like a nightmare in design.  They may be
 thematically different as long as it doesn’t clash.
 
-Freedom Scoops can't used the brand names such as “Chex” name in the project 
-trademarked name by General Mills and cannot be used in _Freedom Scoops_. Instead,
-use something alternative names like freedoom would do in thier project.
+Freedom Scoops can't use brand names such as “Chex” name in the project it is a 
+trademarked name by General Mills and cannot be used in _Freedom Scoops_.  
+Instead, we use a alternative made up name that has 
+no relation to reality, words like Freedom as in (free) Scoops 
+a (different cereal blends) for the project. 
 
 === Documentation
 
