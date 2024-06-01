@@ -42,8 +42,8 @@ For more information, see https://FreedomScoops.github.io/.
 
 == Story
 Story working in progress not final: 
-Waffle Crunch is main character of the story you play as. Want to know more of the scoup read the story in the 
-https://github.com/FreedomScoops/FreedomScoops/tree/main/manual[manuals] folder.
+Waffle Crunch is main character of the story you play as. Want to know more of the scoop read the story 
+https://github.com/FreedomScoops/FreedomScoops-dev/blob/main/fs-story.adoc[here].
 
 == How to play
 
