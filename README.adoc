@@ -26,8 +26,7 @@ levels. This game aims for compatibility with _Chex: Quest 2_
 mods, also known as plain _Doom_ or _Doom 1_. 
 *Freedom Scoops Gold (WIP)*:: Includes four episodes, a prologue and epilogue episodes, 
 plus the First and Second Crunch which are mid episodes, each with nine levels, 
-for a total of 36 levels. This game aims be style after the _Chex: Quest 3 vanilla.
-mods, also known as plain _Doom_ or _Doom 1_.
+for a total of 36 levels. This game aims be style after the _Chex: Quest 3 vanilla wad.
 *Freedom Scoops: Arena*:: A 32-level game designed for competitive zapmatch play a spin-off to the saga.
 
 The engine uses a single file, such as +FS.wad+, that contains
