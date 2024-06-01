@@ -1,7 +1,8 @@
 Release Notes:
-This generates a development build automatically in minutes or hours. Following a change by a contributor or maintainer. 
-This is after all a raw build. It's best to wait until a stable build is released and deployed. 
-What is see here will be fixed or changed. if you enjoy seeing prototypes builds, you should download it and try it. 
+Warning This is not an official release, it is a development build generated automatically in minutes or hours. 
+Following a contributor or maintainer's commit change. After all, this is a raw build. It is best to wait until a stable build has been released and deployed. 
+If you enjoy seeing prototype builds and can't wait to try it, download it and give it a shot. 
+Remember that nothing is final until it's released. What is seen here will be fixed or changed in the future.  
 
 
 
