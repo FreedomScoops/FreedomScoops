@@ -28,7 +28,7 @@ mods, also known as plain _Doom_ or _Doom 1_.
 plus the First and Second Crunch which are mid episodes, each with nine levels, 
 for a total of 36 levels. This game aims be style after the _Chex: Quest 3 vanilla.
 mods, also known as plain _Doom_ or _Doom 1_.
-*Freedom Scoops: Zapmatch*:: A 32-level game designed for competitive zapmatch play a spin-off to the saga.
+*Freedom Scoops: Arena*:: A 32-level game designed for competitive zapmatch play a spin-off to the saga.
 
 The engine uses a single file, such as +FS.wad+, that contains
 all the game data such as graphics, sound effects, music, and so on.
@@ -86,7 +86,7 @@ of the following options should solve it:
 
     ** +FS1FC.wad+ can be renamed to +doom.wad+
     ** +FS1SC.wad+ can be renamed to +doom.wad+
-    ** +FSZM.wad+ can be renamed to +doom2.wad+
+    ** +FSA.wad+ can be renamed to +doom2.wad+
 
 Additionally, for Unix-like operating systems, such as GNU/Linux or a
 BSD variant, _Freedom Scoops_ may be packaged and installed with programs
