@@ -1,11 +1,15 @@
 = Freedom Scoops: Saga
 
-A funny off-brand of chex quest style iwad that a open source a equivalent of FreeDoom.
+_Freedom Scoops_ is a free, open-source game based on the Doom engine, 
+inspired by _Chex Quest_, and aims to create something 
+distinctly different and new using _Freedoom_ technology 
+as the foundational base for the project. 
 
-The Freedom Scoops project aims to create a complete, free content first
-person shooter game, but _Freedom Scoops_ by itself is just the raw material
-for a game. It must be paired with a compatible _Doom_ engine to be
-played. 
+However, _Freedom Scoops_ itself is just the raw material for a game. 
+To play it, you must pair it with a compatible _Doom_ engine. 
+It provides compatible some resources for mapping designers 
+who want to create maps for _Chex Quest_, benefiting the modding community 
+by generating more user content in the long term. 
 
 There is a massive https://doomwiki.org/wiki/Idgames_archive[back
 catalog], spanning over two decades, containing thousands of _Doom_
@@ -38,6 +42,7 @@ _Doom_ source code, this results in a completely free game.
 For more information, see https://FreedomScoops.github.io/.
 
 == Story
+
 Story working in progress not final: 
 Waffle Crunch is main character of the story you play as. Want to know more of the scoop read the story 
 https://github.com/FreedomScoops/FreedomScoops-dev/blob/main/fs-story.adoc[here].
