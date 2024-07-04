@@ -500,8 +500,8 @@ Lasts the entire level but effective only for the current level.
 image:../sprites/suita0.png[Rescue Operations Suit] |
 Protects you from heat, toxins and radiation from damaging floors. +
 Lasts 1 minute.
-| **Strength Symbiote** +
-image:../sprites/pstra0.png[Strength Symbiote] |
+| **Caffeine Overdrive** +
+image:../sprites/pstra0.png[Caffeine Overdrive] |
 Increases your health back to 100%, and enhances your fists to do ten times their
 normal damage. +
 Health lasts until removed by damage; enhanced fists last only for that level. +
