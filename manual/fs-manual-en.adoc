@@ -359,7 +359,7 @@ image:../sprites/sgn2a0.png[Double-barrelled Shotgun] |
 projectile fragmentation for almost 50% more hits per shell
 across a wider spread. Good for short range against groups of
 enemies. _Ammo:_ Shells
-| **Minigun** +
+| **Atom Auto-Laser** +
 image:../sprites/mguna0.png[Atom Auto-Laser] |
 4 | A much better use for your cells than the Twin Stick Laser.
 Up to forty seconds of bringing the pain to keep you safe.
