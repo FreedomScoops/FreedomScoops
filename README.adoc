@@ -264,6 +264,7 @@ We welcome anyone who is interested in the development of Freedom Scoops. Join t
 
 === Acknowledgements
 - **Freedom Scoops Contributors:** Thanks to all the people that are helping out with the project.
+- **Doomworld:** Thanks to all the people over there for feedback and support.
 - **Digital Cafe:** For creating the original Chex Quest game, which served as one of the inspirations for this project.
 - **Freedoom:** For providing the free software game that inspired this project, as well as the tools that serve as its foundation.
 
