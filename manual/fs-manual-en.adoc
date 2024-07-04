@@ -328,7 +328,7 @@ health). If an item gives you more than you can carry, the difference is lost.
 [[weapons]]
 === Weapons
 
-You start the game with only a handgun, 50 bullets and your fists.
+You start the game with only a Twin Stick Laser, 50 cells and your Electric Spork.
 Exploring the level will reveal more weapons and ammo that you can pick up and use.
 
 Pressing the number key on the keyboard switches to the given weapon
@@ -338,14 +338,14 @@ certain type of ammo, which may be found somewhere in the level.
 [options="header",cols="3,1,9",valign="middle",width="100%"]
 |==========================
 | Weapon | Key | Description
-| **Fist** | 1 | If you have no ammunition, you can always fall back on punching the
-monsters with your bare hands. _Ammo:_ None
-| **Ripsaw** +
-image:../sprites/csawa0.png[Ripsaw] |
-1 | Designed for cutting through wood, the ripsaw
-also works well as a melee weapon for cutting through flesh. _Ammo:_ None
-| **Handgun** +
-image:../sprites/pista0.png[Handgun] |
+| **Electric Spork** | 1 | If you have no ammunition, you can always fall back on a taseing the
+monsters with your electric spork. _Ammo:_ None
+| **Quad-Mixer** +
+image:../sprites/csawa0.png[Quad-Mixer] |
+1 | Designed for mixing up through enemies, the Quad-Mixer
+also works well as a melee weapon for mixing through stuff. _Ammo:_ None
+| **Twin Stick Laser** +
+image:../sprites/pista0.png[Twin Stick Laser] |
 2 | Your starter weapon. Its main purpose is to let you fight your way to
 a better weapon, and to hit zapable switches without wasting a second bullet.
 _Ammo:_ Bullets
@@ -360,8 +360,8 @@ projectile fragmentation for almost 50% more hits per shell
 across a wider spread. Good for short range against groups of
 enemies. _Ammo:_ Shells
 | **Minigun** +
-image:../sprites/mguna0.png[Minigun] |
-4 | A much better use for your bullets than the handgun.
+image:../sprites/mguna0.png[Atom Auto-Laser] |
+4 | A much better use for your cells than the Twin Stick Laser.
 Up to forty seconds of bringing the pain to keep you safe.
 _Ammo:_ Bullets
 | **Missile Launcher** +
