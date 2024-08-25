@@ -23,10 +23,10 @@ exclusively for multiplayer deathmatch:
 
 [horizontal]
 *Freedom Scoops First Crunch*:: Single episode five levels, totaling ten, including added multiplayer levels within them.
-levels. This game aims for compatibility with _Chex: Quest_
+This game aims for compatibility with _Chex: Quest_
 mods, also known as plain _Doom_ or _Doom 1_. 
 *Freedom Scoops Second Crunch*:: Single episode five levels, totaling ten, including added multiplayer levels within them.
-levels. This game aims for compatibility with _Chex: Quest 2_
+This game aims for compatibility with _Chex: Quest 2_
 mods, also known as plain _Doom_ or _Doom 1_. 
 *Freedom Scoops: Arena*:: A 32-level game designed for competitive zapmatch play a spin-off to the saga.
 
