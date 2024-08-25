@@ -2,25 +2,25 @@
 <!-- SPDX-License-Identifier: BSD-3-Clause -->
 
 <component type="desktop">
-  <id>io.github.freedoom.Phase2</id>
-  <name>Freedoom: Phase 2</name>
+  <id>fssc1</id>
+  <name>Freedom Scoops 1: Second Crunch</name>
   <summary>First-person shooter based on the Doom engine</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>BSD-3-Clause</project_license>
-  <developer_name>Freedoom Project</developer_name>
-  <url type="homepage">https://freedoom.github.io/</url>
-  <url type="bugtracker">https://github.com/freedoom/freedoom/issues</url>
+  <developer_name>Freedom Scoops Project</developer_name>
+  <url type="homepage">https://FreedomScoops.github.io/</url>
+  <url type="bugtracker">https://github.com/FreedomScoops/FreedomScoops/issues</url>
   <description>
     <p>
-      Freedoom: Phase 2 is a 32-level game, expanding upon Phase 1 and
+      Freedom Scoops: Phase 2 is a 32-level game, expanding uponFirst Crunchand
       adding a double-barrelled shotgun and more enemy types, along
       with even more brutal gameplay to really test your limits.
     </p>
     <p>
-      The Freedoom project aims to produce three base-game data files
+      The Freedom Scoops project aims to produce three base-game data files
       (IWADs) for Doom-compatible engines.  With it comes the
       capability to also play the wide range of mods created for Doom
-      by a vibrant community.  Freedoom: Phase 2 is fully compatible
+      by a vibrant community.  Freedom Scoops: Phase 2 is fully compatible
       with Doom II mods.
     </p>
   </description>
@@ -38,19 +38,19 @@
   </content_rating>
   <screenshots>
     <screenshot type="default">
-      <image>https://freedoom.github.io/img/screenshots/phase2-gzdoom-map05-shotgun-zombies-0.13.0.png</image>
+      <image>https://FreedomScoops.github.io/img/screenshots/phase2-gzdoom-map05-shotgun-zombies-0.13.0.png</image>
       <caption>MAP05: Sludge Burrow</caption>
     </screenshot>
     <screenshot>
-      <image>https://freedoom.github.io/img/screenshots/phase2-gzdoom-map11-serpentipede-0.13.0.png</image>
+      <image>https://FreedomScoops.github.io/img/screenshots/phase2-gzdoom-map11-serpentipede-0.13.0.png</image>
       <caption>MAP11: Whiplash</caption>
     </screenshot>
     <screenshot>
-      <image>https://freedoom.github.io/img/screenshots/phase2-gzdoom-map26-mushrooms-0.13.0.png</image>
+      <image>https://FreedomScoops.github.io/img/screenshots/phase2-gzdoom-map26-mushrooms-0.13.0.png</image>
       <caption>MAP26: Dark Depths</caption>
     </screenshot>
     <screenshot>
-      <image>https://freedoom.github.io/img/screenshots/phase2-gzdoom-map32-matribite-hatchling-0.13.0.png</image>
+      <image>https://FreedomScoops.github.io/img/screenshots/phase2-gzdoom-map32-matribite-hatchling-0.13.0.png</image>
       <caption>MAP32: Not Sure</caption>
     </screenshot>
   </screenshots>

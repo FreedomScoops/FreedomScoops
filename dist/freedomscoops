@@ -23,18 +23,18 @@ fi
 
 case "$(basename "$0")" in
     freedm)
-        IWAD=freedm.wad
+        IWAD=fsa.wad
         ;;
-    freedoom1)
-        IWAD=freedoom1.wad
+    FSFC1)
+        IWAD=fsfc1.wad
         ;;
-    freedoom2 | *)
-        IWAD=freedoom2.wad
+    FSSC1 | *)
+        IWAD=fssc1.wad
         ;;
 esac
 
 if [ -z "$DOOMWADPATH" ]; then
-    # Support installations of Freedoom to the home directory using
+    # Support installations of Freedom Scoops to the home directory using
     # the XDG spec.  Makes this complicated, but let’s do it right.
     if [ -z "$XDG_DATA_HOME" ]; then
         if [ -z "$HOME" ]; then

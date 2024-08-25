@@ -126,11 +126,11 @@ help.png: text_strings helpbg.png
 	cp $@ ../
 
 
-credit.png: text_strings helpbg.png credit.txt
+credit.png: text_strings ../screens/credit.png credit.txt
 	./smtextgen credit.png 320x200                \
-	   -background "helpbg.png"                   \
-	   120,5  "file:freettl.png"                  \
-	   10,30  "include:credit.txt"
+	   -background "../screens/credit.png"                   \
+	   120,5  ""                  \
+	   10,5  "include:credit.txt"
 	cp $@ ../
 
 wikilrs_horiz.png:
@@ -148,15 +148,15 @@ wivctms.png:
 
 titlepic: fd1title.png fd2title.png fdmtitle.png
 
-fd1title.png: text_strings ../titlepic/titlepic.png ../m_doom.png 
-	./create_caption ../titlepic/titlepic.png ../dummy.png ../t_phase1.png $@
+fd1title.png: text_strings ../screens/titlepic.png ../m_doom.png 
+	./create_caption ../screens/titlepic.png ../dummy.png ../t_phase1.png $@
 	cp $@ ../
 
-fd2title.png: text_strings ../titlepic/titlepic.png ../m_doom.png
-	./create_caption ../titlepic/titlepic.png ../dummy.png ../t_phase2.png $@
+fd2title.png: text_strings ../screens/titlepic.png ../m_doom.png
+	./create_caption ../screens/titlepic.png ../dummy.png ../t_phase2.png $@
 	cp $@ ../
 
-fdmtitle.png: ../titlepic/freedm_titlepic.png
+fdmtitle.png: ../screens/freedm_titlepic.png
 	./create_caption $< $@
 	cp $@ ../
 

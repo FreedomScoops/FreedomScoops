@@ -1,22 +1,25 @@
-Freedoom Scoops is a collaborative
-effort to create a complete
-free content game. It is the combined work
-of many, many different talented
-game content makers around the world
-more than is possible to list
-their roles on this page alone.
-Thanks go to everyone who has contributed
-and helped to make this project a reality.
+Craving the latest updates? Head over to 
+our GitHub! https://FreedomFlakes.github.io/
 
-Freedom Flakes is distributed as
-free software under the terms
-of the BSD license, and is
-under continual development and
-improvement. If you like the project and
-want to help make it better, visit the
-Freedom Flakes website:
 
-        https://FreedomFlakes.github.io/
 
-Thanks for playing!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Check out the CREDITS file for more info. 
+                    Thanks for playing!
 

@@ -4,7 +4,7 @@
 :toc:
 :toc-title:
 
-image::../graphics/titlepic/titlepic.png[Freedom Scoops Title Image,align="center",width=380,pdfwidth=50vw]
+image::../graphics/screens/titlepic.png[Freedom Scoops Title Image,align="center",width=380,pdfwidth=50vw]
 
 Welcome to Freedom Scoops, a complete game that is
 https://www.gnu.org/philosophy/free-sw.html[free]
@@ -349,36 +349,36 @@ image:../sprites/pista0.png[Twin Stick Laser] |
 2 | Your starter weapon. Its main purpose is to let you fight your way to
 a better weapon, and to hit zapable switches without wasting a second bullet.
 _Ammo:_ Bullets
-| **Pump-action Shotgun** +
-image:../sprites/shota0.png[Pump-action Shotgun] |
-3 | zaps seven pellets in a fan pattern, letting you hit multiple
-targets or one big one. _Ammo:_ Shells
-| **Double-barrelled Shotgun** +
-image:../sprites/sgn2a0.png[Double-barrelled Shotgun] |
+| **Receptor** +
+image:../sprites/shota0.png[Receptor] |
+3 | Has a signal dish in front zaps soinc waves of enegry, letting you hit multiple
+targets or one big one. _Ammo:_ cells
+| **Mega-Receptor** +
+image:../sprites/sgn2a0.png[Mega-Receptor] |
 3 | Stronger tolerance for powerful loads means better
-projectile fragmentation for almost 50% more hits per shell
+projectile fragmentation for almost 50% more hits per sonic zap
 across a wider spread. Good for short range against groups of
-enemies. _Ammo:_ Shells
-| **Atom Auto-Laser** +
-image:../sprites/mguna0.png[Atom Auto-Laser] |
+enemies. _Ammo:_ cells
+| **Photon Laser** +
+image:../sprites/mguna0.png[Photon Laser] |
 4 | A much better use for your cells than the Twin Stick Laser.
-Up to forty seconds of bringing the pain to keep you safe.
+Up to forty seconds of bringing the damage to keep you safe.
 _Ammo:_ Bullets
-| **Missile Launcher** +
+| **Pulse Cannon** +
 image:../sprites/launa0.png[Missile Launcher] |
-5 | Fires missiles that deal a lot of damage on impact, then explode to take
+5 | Fires energy orbs that deal a lot of damage on impact, then explode to take
 out any smaller monsters nearby. Be careful not to get caught in the blast!
 _Ammo:_ Missiles
-| **Polaric Energy Weapon** +
-image:../sprites/plasa0.png[Polaric Energy Weapon] |
+| **Atomizer** +
+image:../sprites/plasa0.png[Atomizer] |
 6 | Produces a continuous stream of polaric energy
 projectiles which are very effective against stronger monsters.
-_Ammo:_ Energy
-| **SKAG 1337** +
-image:../sprites/bfuga0.png[SKAG 1337] |
+_Ammo:_ Plasmanite
+| **Demolisher 8000** +
+image:../sprites/bfuga0.png[Demolisher 8000] |
 7 | Experimental weapon that launches a single massive polaric energy ball,
 then releases a secondary energy blast in the same direction!
-Slow to zap, but worth the wait. _Ammo:_ Energy
+Slow to zap, but worth the wait. _Ammo:_ Plasmanite
 |==========================
 
 [[ammo]]
@@ -390,14 +390,14 @@ Slow to zap, but worth the wait. _Ammo:_ Energy
 image:../sprites/clipa0.png[Bullet Clip] |
 image:../sprites/ammoa0.png[Case of Bullets]
 | **Shells** |
-image:../sprites/shela0.png[Shotgun Shells] |
-image:../sprites/sboxa0.png[Box of Shotgun Shells]
+image:../sprites/shela0.png[Receptor Cells] |
+image:../sprites/sboxa0.png[Box of Receptor Cells]
 | **Missiles** |
 image:../sprites/rocka0.png[Missile] |
 image:../sprites/broka0.png[Crate of Missiles]
 | **Energy** |
-image:../sprites/cella0.png[Small Energy Recharge] |
-image:../sprites/celpa0.png[Large Energy Recharge]
+image:../sprites/cella0.png[Plasmanite Recharge] |
+image:../sprites/celpa0.png[Large Plasmanite Recharge]
 | **Backpack** |
 - |
 image:../sprites/bpaka0.png[Backpack]
@@ -491,7 +491,7 @@ You may also encounter any one of these while exploring:
 image:../sprites/pvisa0.png[Low-Light Goggles] |
 Let you see in the dark. +
 Lasts 2 minutes.
-| **Area Survey Map** +
+| **Holo Map** +
 image:../sprites/pmapa0.png[Area Survey Map] |
 Reveals unexplored areas of the map, including some secret areas that
 may not be immediately visible. +

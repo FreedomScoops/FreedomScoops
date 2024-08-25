@@ -1,13 +1,35 @@
-= Freedom Scoops TO-DO list
+= Freedom Scoops Change Log
+This is changelog to keep track of what is happing.
 
 == General 
+
+== Notes (8-25-2024) 
+  ** Credit screen was added. And text was tweeked for the theme of project.
+  ** Titepic folder was rename to screens and makefile was reworked for this as well.
+  ** The Hero look was revamped. Even his face hud but only four for now.
+  ** Hud got tweeked a little. Even placeholder hud font from red to some purple pink color.  
+  ** Story and artwork concepts was add in misc folder to show what is planned so far.
+  ** New resources was added and edited, three new weapons, some pickups, few new textures. etc... - ZNukem
+  ** Manual info was mostly updated some text and names.
+  ** A generated Playwad.sh file was included to make testing easier for Linux.
+  ** Menu Bigfont color is turn to green and pink. Menu bar bit edited.
+  ** A working in progess level for First Crunch, there also a mp level in same level. It should be chex quest compatible. - ZNukem
+  ** This TODO was rename to ChangeLog. Real basic TODO was made list norrmal stuff. - ZNukem
+  ** 6 & 7 weapon keys are fixed. Has been set back to norrmal in buildcfg.txt. Due to missunderstanding thinking mapset was shareware.
+  ** Most of text was edited in FC1_.deh not all, rest of dehacked files stiil in works to edit.
+  ** Dist folder content and names was changed still more work needs to be done.
+  ** Main readme has been updated a little.
+
+== Old repository deprecated (6-25-2024)
+  ** Old repository was deprecated due to issues not committing changes, but brakes on commit. 
+A new repository was made to replace it and fix all problems with it. Old one was bugged.
 
 == Notes (4-18-2024) 
   ** A stable build was release on GitHub as a temporary solution until a fix can be made on the main branch. 
   ** New assets submits and changes by (ZNukem) 
   ** Removed bg screen title logo.
   ** 6 & 7 weapon keys broken needs to be fixed.
-  ** Tweeking buttion swiches to work right in game.
+  ** Tweaking button switches to work properly in-game.
   ** Chex dehacked needs to be added in at somepoint.
   ** GFX swap can be done using = in pwad.txt and other docs, was already there.
 

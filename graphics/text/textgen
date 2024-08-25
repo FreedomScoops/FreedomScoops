@@ -22,8 +22,8 @@ class TextGenerator(object):
         self.get_font_widths()
 
     # Tinting parameters for colorizing text:
-    COLOR_BLUE = "#000001"
-    COLOR_RED = "#010000"
+    COLOR_BLUE = "#9f009b"
+    COLOR_RED = "#37732b"
     COLOR_WHITE = None
 
     # Height of font in pixels.

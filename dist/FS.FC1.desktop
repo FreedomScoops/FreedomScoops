@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Freedom Scoops 1: First Crunch
+Comment=Battle monsters in single 5-level episode
+GenericName=First Person Shooter Game
+Type=Application
+PrefersNonDefaultGPU=true
+Icon=io.github.FreedomScoops.First-Crunch
+Keywords=first;person;shooter;doom;Freedom Scoops;
+Categories=Game;ActionGame;
+Exec=FSFC1
+Name[en_US]=FS.FC1

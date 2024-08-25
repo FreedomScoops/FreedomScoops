@@ -32,11 +32,37 @@ E1M6    = dummy
 E1M7    = dummy
 E1M8    = dummy
 E1M9    = dummy
+E2M1    = dummy
+E2M2    = dummy
+E2M3    = dummy
+E2M4    = dummy
+E2M5    = dummy
+E2M6    = dummy
+E2M7    = dummy
+E2M8    = dummy
+E2M9    = dummy
+E3M1    = dummy
+E3M2    = dummy
+E3M3    = dummy
+E3M4    = dummy
+E3M5    = dummy
+E3M6    = dummy
+E3M7    = dummy
+E3M8    = dummy
+E3M9    = dummy
+E4M1    = dummy
+E4M2    = dummy
+E4M3    = dummy
+E4M4    = dummy
+E4M5    = dummy
+E4M6    = dummy
+E4M7    = dummy
+E4M8    = dummy
+E4M9    = dummy
 
 #else /* #ifndef FREEDM */
 
 #ifdef FREEDM
-
 MAP01   = dm01
 MAP02   = dm02
 MAP03   = dm03
@@ -71,16 +97,43 @@ MAP31   = dm31
 MAP32   = dm32
 
 #else   /* #ifdef FREEDM */
+E1M1    = E2M1 
+E1M2    = E2M2
+E1M3    = E2M3
+E1M4    = E2M4
+E1M5 ; Last Level 
+E1M6    = dummy
+E1M7    = dummy
+E1M8    = dummy
+E1M9    = dummy
+E2M1    = dummy
+E2M2    = dummy
+E2M3    = dummy
+E2M4    = dummy
+E2M5    = dummy
+E2M6    = dummy
+E2M7    = dummy
+E2M8    = dummy
+E2M9    = dummy
+E3M1    = dummy
+E3M2    = dummy
+E3M3    = dummy
+E3M4    = dummy
+E3M5    = dummy
+E3M6    = dummy
+E3M7    = dummy
+E3M8    = dummy
+E3M9    = dummy
+E4M1    = dummy
+E4M2    = dummy
+E4M3    = dummy
+E4M4    = dummy
+E4M5    = dummy
+E4M6    = dummy
+E4M7    = dummy
+E4M8    = dummy
+E4M9    = dummy
 
-E1M1  = E2M1
-E1M2  = E2M2
-E1M3  = E2M3
-E1M4  = E2M4
-E1M5  = E2M5 ; Last Level 
-E1M6  = dummy
-E1M7  = dummy
-E1M8  = dummy
-E1M9  = dummy
 
 #endif /* #ifdef FREEDM */
 
@@ -616,7 +669,7 @@ STKEYS7	0	0
 STKEYS8	0	0
 STDISK	0	-1
 STCDROM	-1	-1
-STARMS	-2	0
+STARMS	-0	0
 STCFN033	0	0
 STCFN034	0	0
 STCFN035	0	0
@@ -2162,8 +2215,8 @@ IFOGE0 25 44
 LAUNA0	30	20
 MEDIA0	8	18
 MGUNA0	25	25
-MISGA0	-111 -104
-MISGB0	-107 -106
+MISGA0	-111 -99
+MISGB0	-111 -98
 MISFA0	-110 -99
 MISFB0	-110 -94
 MISFC0	-111 -96
@@ -2315,12 +2368,12 @@ SAWGD0	-70	-69
 SBOXA0	17	12
 SHELA0	7	9
 SHOTA0	21	13
-SHTGA0	-122	-107
-SHTGB0	-78	-40
-SHTGC0	-60	-25
-SHTGD0	-44	-39
-SHTFA0	-142	-98
-SHTFB0	-131	-87
+SHTGA0	-134 -107
+SHTGB0	-134 -107
+SHTGC0	-134 -107
+SHTGD0	-134 -107
+SHTFA0	-134 -107
+SHTFB0	-134 -107
 SOULA0	12	39
 SOULB0	12	39
 SOULC0	12	39
