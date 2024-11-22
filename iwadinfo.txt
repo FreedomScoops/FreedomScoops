@@ -1,6 +1,6 @@
 IWad
 {
-	Name = "Freedom Scoops: First Crunch"
+	Name = "Freedom Scoops"
 	Autoname = "fsfc1"
 	Game = "Chex"
 	Config = "Chex"
@@ -8,3 +8,4 @@ IWad
 	BannerColors = "ff ff 00", "00 c0 00"
 	IgnoreTitlePatches = 1
 }
+
