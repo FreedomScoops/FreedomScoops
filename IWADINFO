@@ -1,6 +1,6 @@
 IWad
 {
-	Name = "Freedom Scoops: First Crunch"
+	Name = "Freedom Scoops"
 	Autoname = "fsfc1"
 	Game = "Chex"
 	Config = "Chex"
