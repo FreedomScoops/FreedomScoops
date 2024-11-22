@@ -1,0 +1,11 @@
+IWad
+{
+	Name = "Freedom Scoops: First Crunch"
+	Autoname = "fsfc1"
+	Game = "Chex"
+	Config = "Chex"
+	Mapinfo = "mapinfo/chex.txt"
+	BannerColors = "ff ff 00", "00 c0 00"
+	IgnoreTitlePatches = 1
+}
+
