@@ -322,7 +322,7 @@ E1TEXT = Mission accomplished! \n\
          \n\
          \n\
          \n\n\
-         You freed everyone from Goonites!\n\
+         You freed everyone from Xenagons!\n\
          Good Job, Now head back to planet \n\
          found where they are hiding out\n\
          and scare them away, hero.\n\
@@ -514,7 +514,7 @@ OB_MPBFG_MBF = %o had %p ass kicked by %k's SKAG!
 # Quit messages.
 DOSY = (Press Y to exit the program.)
 QUITMSG = Don't give up now hero.\nPress Y if you wish to quit.
-QUITMSG1 = Don't quit now, \nThe zenagons and goonites are on the loose.
+QUITMSG1 = Don't quit now, \nThe Xenagons and Goozite are on the loose.
 QUITMSG2 = Hey buddy, there's still\nwork to be done.\nAre you sure you want to quit?
 QUITMSG3 = Don't leave hero\n galaxy needs you\nAre you sure you want to quit?.
 QUITMSG4 = Please don't go.\nIf don't stop them now they will cross over into real world too somehow.

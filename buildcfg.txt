@@ -157,8 +157,12 @@ FREEDM
 #else
 #ifdef FSFC1
 DEHACKED = fc1_deh
+;[lumps]
+;IWAD LUMP For ZDoom Ports Is Planned
 #else
 DEHACKED = sc1_deh
+;[lumps]
+;IWAD LUMP For ZDoom Ports Is Planned
 #endif
 ENDOOM
 #endif

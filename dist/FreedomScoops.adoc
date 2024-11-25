@@ -1,4 +1,4 @@
-= Freedom Scoops(6)
+= FreedomScoops(6)
 // SPDX-License-Identifier: CC0-1.0
 :doctype: manpage
 
@@ -6,7 +6,7 @@
 Freedom Scoops - Automatically launch Freedom Scoops with an engine
 
 == SYNOPSIS
-*Freedom Scoops* [_-p_ _DOOMPORT_|_--_] [_ARGS_]
+*FreedomScoops* [_-p_ _DOOMPORT_|_--_] [_ARGS_]
 
 == DESCRIPTION
 Freedom Scoops is a project to create a complete free-content game based on

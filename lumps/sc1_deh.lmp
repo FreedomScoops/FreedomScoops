@@ -317,20 +317,34 @@ NIGHTMARE = The game is not designed to be\n\
             really that good - or bored.\n\n\
             (Press Y to confirm)
 # End-of-episode texts, now with a consistent story. Feel free to edit them.
-E1TEXT = Free at last from that dreadful outpost!\n\
-         But you're still stuck on this rock, with\n\
-         AGM and all their monstrous "experiments."\n\
-         Best not to dwell on what evil horrors\n\
-         they were going to create from you...\n\n\
-         You need a functioning starship to\n\
-         get back to Earth. The best chance at\n\
-         one is the facility they had you in\n\
-         when they first brought you planetside.\n\
-         When they first gave you your powers.\n\n\
-         When the nightmare first began...\n\n\
-         Perfect time for the teleporter to\n\
-         glitch out your gear as you get ready\n\
-         to raid the Military Labs.
+Mission accomplished! \n\
+         \n\
+         \n\
+         \n\
+         \n\n\
+         You freed everyone from Xenagons!\n\
+         Good Job, Now head back to planet \n\
+         found where they are hiding out\n\
+         and scare them away, hero.\n\
+         \n\n\
+         \n\n\
+         \n\
+         \n\
+         Are you prepared for the next mission?.
+E1TEXT = Mission accomplished!\n\
+         \n\
+         You destroyed Xenagon's Goonites"\n\
+         cloning operation, foiling their plans.\n\
+         Most of those monsters fled out \n\
+         from the facility in a functioning starship.\n\
+         Rest are being detained or captured\n\
+         You stood there see the badies aboarding\n\
+         knowing you brought Freedom City at peace\n\
+         And the galaxy once again.\n\
+         You know far from over\n\
+         Hopeing the next adventure will come.\n\
+         \n\n\
+         Are you prepared for the next adventure?
 E2TEXT = The massive brutes collapse onto the\n\
          ground, falling apart bit by bit.\n\
          The starport is yours.\n\n\
