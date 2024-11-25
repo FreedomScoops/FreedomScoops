@@ -45,12 +45,12 @@ jobs:
         fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
     - name: Upload Freedom Scoops
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         path: "artifacts/fs1"
         name: Freedom Scoops ${{steps.buildstep.outputs.VERSION}}
     - name: Upload Freedom Scoops Arena
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         path: "artifacts/fsa"
         name: Freedom Scoops Arena${{steps.buildstep.outputs.VERSION}}
