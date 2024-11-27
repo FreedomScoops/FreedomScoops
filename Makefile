@@ -22,10 +22,14 @@ MANUAL_ADOC_FILES=$(wildcard manual/fs-manual-??.adoc)
 MANUAL_PDF_FILES=$(subst .adoc,.pdf,$(MANUAL_ADOC_FILES))
 
 FSFC1=$(WADS)/FSFC1.wad
+FSFC1_GZDOOM_RES=$(WADS)/FSFC1_GZ_RES.ipk3 
+
 FSSC1=$(WADS)/FSSC1.wad
+FSSC1_GZDOOM_RES=$(WADS)/FSSC1_GZ_RES.ipk3 
+
 FREEDM=$(WADS)/FSA.wad
 
-OBJS=$(FREEDM) $(FSFC1) $(FSSC1) 
+OBJS=$(FREEDM) $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES)
 
 .PHONY: clean dist pngs-modified-check
 
@@ -93,6 +97,7 @@ $(FSFC1): wadinfo_FSFC1.txt subdirs
 	@mkdir -p $(WADS)
 	$(RM) $@
 	$(DEUTEX) $(DEUTEX_ARGS) -iwad -build wadinfo_FSFC1.txt $@
+
 #---------------------------------------------------------
 # phase 1 (udoom) iwad
 
@@ -104,7 +109,16 @@ $(FSSC1): wadinfo_FSSC1.txt subdirs
 	$(RM) $@
 	$(DEUTEX) $(DEUTEX_ARGS) -iwad -build wadinfo_FSSC1.txt $@
 
-
+# Create the first .ipk3 and rename FSFC1INFO to iwadinfo.txt for First Crunch
+# Copy and rename FSFC1INFO to iwadinfo.txt  
+# Create the zip file
+# Clean up temporary files 
+# Rename the zip to .ipk3
+$(FSFC1_GZDOOM_RES):
+	cp lumps/FSFC1INFO iwadinfo.txt   
+	zip -r FSFC1_GZ_RES.zip iwadinfo.txt 
+	rm iwadinfo.txt          
+	mv FSFC1_GZ_RES.zip $(FSFC1_GZDOOM_RES) 
 #---------------------------------------------------------
 # phase 2 (doom2) iwad
 
@@ -115,6 +129,17 @@ $(FREEDOOM2): wadinfo_phase2.txt subdirs
 	@mkdir -p $(WADS)
 	$(RM) $@
 	$(DEUTEX) $(DEUTEX_ARGS) -iwad -build wadinfo_phase2.txt $@
+
+# Create the second .ipk3 and rename FSSC1INFO to iwadinfo2.txt for Second Crunch
+# Copy and rename FSSC1INFO to iwadinfo.txt
+# Create the zip file
+# Clean up temporary files 
+# Rename the zip to .ipk3
+$(FSSC1_GZDOOM_RES):
+	cp lumps/FSSC1INFO iwadinfo.txt 
+	zip -r FSSC1_GZ_RES.zip iwadinfo.txt
+	rm iwadinfo.txt           
+	mv FSSC1_GZ_RES.zip $(FSSC1_GZDOOM_RES)
 
 #---------------------------------------------------------
 # Packaging and Docs
@@ -145,7 +170,7 @@ DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
 	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
-	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(DISTDOCS)
+	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES) $(DISTDOCS)
 
 json: $(OBJS)
 ifndef JSON
@@ -290,31 +315,31 @@ target=$(DESTDIR)$(prefix)
 #	install -Dm 644 COPYING.adoc "$(target)$(docdir)/freedm/COPYING"
 #	-install -Dm 644 $(MANUAL_PDF_FILES) -t "$(target)$(docdir)/freedm"
 #
-#install-freedoom: $(FREEDOOM1) $(FREEDOOM2) $(HTMLDOCS)                 \
-#                  $(MANUAL_PDF_FILES) freedoom1.6 freedoom2.6    \
-#                  io.github.freedoom.Phase1.png                         \
-#                  io.github.freedoom.Phase2.png
-#	install -Dm 644 dist/io.github.freedoom.Phase1.desktop \
-#	                -t "$(target)/share/applications"
-#	install -Dm 644 dist/io.github.freedoom.Phase2.desktop \
-#	                -t "$(target)/share/applications"
-#	install -Dm 644 dist/io.github.freedoom.Phase1.metainfo.xml \
-#	                -t "$(target)/share/metainfo"
-#	install -Dm 644 dist/io.github.freedoom.Phase2.metainfo.xml \
-#	                -t "$(target)/share/metainfo"
-#	install -Dm 755 dist/freedoom "$(target)$(bindir)/freedoom1"
-#	install -Dm 755 dist/freedoom "$(target)$(bindir)/freedoom2"
-#	install -Dm 644 dist/freedoom1.6 -t "$(target)$(mandir)/man6"
-#	install -Dm 644 dist/freedoom2.6 -t "$(target)$(mandir)/man6"
-#	install -Dm 644 $(FREEDOOM1) $(FREEDOOM2) -t "$(target)$(waddir)"
-#	install -Dm 644 dist/io.github.freedoom.Phase1.png \
-#	                -t "$(target)/share/icons"
-#	install -Dm 644 dist/io.github.freedoom.Phase2.png \
-#	                -t "$(target)/share/icons"
-#	install -Dm 644 CREDITS CREDITS-MUSIC NEWS.html README.html \
-#	                -t "$(target)$(docdir)/freedoom"
-#	install -Dm 644 COPYING.adoc "$(target)$(docdir)/freedoom/COPYING"
-#	-install -Dm 644 $(MANUAL_PDF_FILES) -t "$(target)$(docdir)/freedoom"
+install-freedoom: $(FREEDOOM1) $(FREEDOOM2) $(HTMLDOCS)                 \
+                  $(MANUAL_PDF_FILES) freedoom1.6 freedoom2.6    \
+                  io.github.freedoom.Phase1.png                         \
+                  io.github.freedoom.Phase2.png
+	install -Dm 644 dist/io.github.freedoom.Phase1.desktop \
+	                -t "$(target)/share/applications"
+	install -Dm 644 dist/io.github.freedoom.Phase2.desktop \
+	                -t "$(target)/share/applications"
+	install -Dm 644 dist/io.github.freedoom.Phase1.metainfo.xml \
+	                -t "$(target)/share/metainfo"
+	install -Dm 644 dist/io.github.freedoom.Phase2.metainfo.xml \
+	                -t "$(target)/share/metainfo"
+	install -Dm 755 dist/freedoom "$(target)$(bindir)/freedoom1"
+	install -Dm 755 dist/freedoom "$(target)$(bindir)/freedoom2"
+	install -Dm 644 dist/freedoom1.6 -t "$(target)$(mandir)/man6"
+	install -Dm 644 dist/freedoom2.6 -t "$(target)$(mandir)/man6"
+	install -Dm 644 $(FREEDOOM1) $(FREEDOOM2) -t "$(target)$(waddir)"
+	install -Dm 644 dist/io.github.freedoom.Phase1.png \
+	                -t "$(target)/share/icons"
+	install -Dm 644 dist/io.github.freedoom.Phase2.png \
+	                -t "$(target)/share/icons"
+	install -Dm 644 CREDITS CREDITS-MUSIC NEWS.html README.html \
+	                -t "$(target)$(docdir)/freedoom"
+	install -Dm 644 COPYING.adoc "$(target)$(docdir)/freedoom/COPYING"
+	-install -Dm 644 $(MANUAL_PDF_FILES) -t "$(target)$(docdir)/freedoom"
 
 # For the following uninstall targets the manual arguments are intentionally
 # not quoted since they are wildcards.
@@ -338,31 +363,31 @@ target=$(DESTDIR)$(prefix)
 #	      "$(target)$(bindir)" "$(target)$(mandir)/man6"        \
 #	      "$(target)$(waddir)" "$(target)$(docdir)/freedm"
 #
-#uninstall-freedoom:
-#	$(RM)                                                                   \
-#	      "$(target)/share/applications/io.github.freedoom.Phase1.desktop"  \
-#	      "$(target)/share/applications/io.github.freedoom.Phase2.desktop"  \
-#	      "$(target)/share/metainfo/io.github.freedoom.Phase1.metainfo.xml" \
-#	      "$(target)/share/metainfo/io.github.freedoom.Phase2.metainfo.xml" \
-#	      "$(target)/share/icons/io.github.freedoom.Phase1.png"             \
-#	      "$(target)/share/icons/io.github.freedoom.Phase2.png"             \
-#	      "$(target)$(bindir)/freedoom1"                                    \
-#	      "$(target)$(bindir)/freedoom2"                                    \
-#	      "$(target)$(mandir)/man6/freedoom1.6"                             \
-#	      "$(target)$(mandir)/man6/freedoom2.6"                             \
-#	      "$(target)$(waddir)/freedoom1.wad"                                \
-#	      "$(target)$(waddir)/freedoom2.wad"                                \
-#	      "$(target)$(docdir)/freedoom/CREDITS"                             \
-#	      "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
-#	      "$(target)$(docdir)/freedoom/COPYING"                             \
-#	      "$(target)$(docdir)/freedoom/NEWS.html"                           \
-#	      "$(target)$(docdir)/freedoom/README.html"                         \
-#	       $(target)$(docdir)/freedoom/freedoom-manual-??.pdf
-#	-rmdir -p "$(target)/share/applications"                    \
-#	      "$(target)/share/metainfo" "$(target)/share/icons"    \
-#	      "$(target)$(bindir)" "$(target)$(mandir)/man6"        \
-#	      "$(target)$(waddir)" "$(target)$(docdir)/freedoom"
-#
-#install: install-freedm install-freedoom
-#
-#uninstall: uninstall-freedm uninstall-freedoom
+uninstall-freedoom:
+	$(RM)                                                                   \
+	      "$(target)/share/applications/io.github.freedoom.Phase1.desktop"  \
+	      "$(target)/share/applications/io.github.freedoom.Phase2.desktop"  \
+	      "$(target)/share/metainfo/io.github.freedoom.Phase1.metainfo.xml" \
+	      "$(target)/share/metainfo/io.github.freedoom.Phase2.metainfo.xml" \
+	      "$(target)/share/icons/io.github.freedoom.Phase1.png"             \
+	      "$(target)/share/icons/io.github.freedoom.Phase2.png"             \
+	      "$(target)$(bindir)/freedoom1"                                    \
+	      "$(target)$(bindir)/freedoom2"                                    \
+	      "$(target)$(mandir)/man6/freedoom1.6"                             \
+	      "$(target)$(mandir)/man6/freedoom2.6"                             \
+	      "$(target)$(waddir)/freedoom1.wad"                                \
+	      "$(target)$(waddir)/freedoom2.wad"                                \
+	      "$(target)$(docdir)/freedoom/CREDITS"                             \
+	      "$(target)$(docdir)/freedoom/CREDITS-MUSIC"                       \
+	      "$(target)$(docdir)/freedoom/COPYING"                             \
+	      "$(target)$(docdir)/freedoom/NEWS.html"                           \
+	      "$(target)$(docdir)/freedoom/README.html"                         \
+	       $(target)$(docdir)/freedoom/freedoom-manual-??.pdf
+	-rmdir -p "$(target)/share/applications"                    \
+	      "$(target)/share/metainfo" "$(target)/share/icons"    \
+	      "$(target)$(bindir)" "$(target)$(mandir)/man6"        \
+	      "$(target)$(waddir)" "$(target)$(docdir)/freedoom"
+
+install: install-freedm install-freedoom
+
+uninstall: uninstall-freedm uninstall-freedoom

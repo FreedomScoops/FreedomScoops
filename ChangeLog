@@ -3,9 +3,17 @@ This is changelog to keep track of what is happening.
 
 == General 
 
+== Notes (8-26-2024) ZNukem
+I have added iwad loading (IWADINFO) for GZDoom and twerked some stuff.
+
+  ** Adjusted the Makefile to add .IPK3 for loading vanilla IWADs by IWADINFO. Existing IWADs cover everything for now. There might be plans to add widescreen HUD and cursors to these .IPK3 files in the future. There are no plans to support a full standalone gzdoom packages for both games. Just for loading IWAD only.
+  ** New lumps added FSFC1INFO and FSSC1INFO will rename into IWADINFO for both IPAK files once makefile runs.
+  ** Tweeked the readme.adoc to adjust some stuff. Even other text files.
+
 == Notes (8-25-2024) ZNukem
 Hopefully that everything listed for now.
-
+  
+  ** Updated CI: Artfact from v1 to v4
   ** Tried to adjust the dist stuff and fix install uninstall in makefile, still needs more work.
   ** Add a fake name called G.N.A to replace that branding in game. Also a star-ship or a bowl as logo might be cool too. This is still being determined. 
   ** Changed the enemy goo nite name to goozites to all the stuff. This was brought up to me by a friend about the other name could get miss read.

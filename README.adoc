@@ -131,7 +131,7 @@ The general rules go as follows:
   * You must have permission for everything you submit. If you make
     your own resources, do not base on resources from _Chex_ or any
     other restricted work, and do not use artificial intelligence 
-    to generate resources. If you take work from other places, 
+    to generate art/sound resources. If you take work from other places, 
     please make sure that the work is freely-licensed or that you obtain permission to 
     include it in the _Freedom Scoops_ project. They may not place additional 
     restrictions compared to the normal _Freedom Scoops_
@@ -154,7 +154,7 @@ The general rules go as follows:
 All levels for _Freedom Scoops_ must be vanilla-compatible, requiring an
 expanded-limits or limit-removing engine is not permissible.  This
 means you may not exceed the limits of the original _Doom_ engine, and
-do not depend on additional mapping features.  Levels should be in
+do not depend on additional mapping features. Levels should be in
 _Doom_’s original format, not in “Hexen” or "GZDoom"-format.
 
 It is sensible to also heed the following guidelines:
@@ -195,8 +195,8 @@ any brand names, such as "Chex," which is a trademark of General Mills.
 Instead, we create and use entirely fictional names with no connection to real-world brands. 
 For example, "Freedom Scoops" can represent a blend of different cereals 
 and unrelated to any existing products or trademarks. A made up fictional name like 
-"Galactic Nutritional Alliance or (G.N.A.)" with can be used on surfaces 
-and textures as an example of this approach or something generic should do.
+"Galactic Nutritional Alliance or (G.N.A.)" can be used on surfaces 
+and textures as an example or maybe something generic should do.
 
 === Documentation
 
