@@ -38,6 +38,33 @@ Duration = 4
 Frame 48
 Duration = 3
 
+# Frame/Thing table changes:
+
+Frame 537
+Duration = 3
+
+Frame 538
+Duration = 3
+
+Frame 539 
+Duration = 0
+
+Thing 2 (Zombieman)
+Close attack frame = 184
+Far attack frame = 0
+
+Thing 3 (Shotgun guy)
+Close attack frame = 217
+Far attack frame = 0
+
+Thing 16 (Boss)
+Width = 2883584
+Height = 6553600
+Speed = 0
+
+Thing 19
+Height = 0
+
 # This is a magic comment recognized by Chocolate Doom, so that the
 # BEX [STRINGS] section below will be parsed:
 #
@@ -544,6 +571,21 @@ TXT_D2E1 = Phase 2
 # IDSPISPOPD is swapped into the slot normally for Phase 2, in case of
 # engines that would otherwise try to apply the cheat twice.
 
+# Cheats:
+
 Cheat 0
-No Clipping 1 = idclip
-No Clipping 2 = idspispopd
+Chainsaw = joelkoenigs
+God mode = davidbrus
+Ammo & Keys = scottholman
+Ammo = mikekoenigs
+No Clipping 1 = charlesjacobi
+No Clipping 2 = charlesjacobi
+Invincibility = andrewbenson
+Berserk = fshot
+Invisibility = marybregi
+Radiation Suit = allen
+Auto-map = digitalcafe
+Lite-amp Goggles = joshuastorms
+Level Warp = leesnyder
+Player Position = kimhyers
+Map cheat = sherrill

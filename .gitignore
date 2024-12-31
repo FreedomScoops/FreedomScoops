@@ -2,6 +2,9 @@
 
 # File patterns to ignore. This applies recursively to all subdirectories.
 *.6
+*.png~
+*.kra~
+*.kra
 *.bak
 *.html
 *.ini

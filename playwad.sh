@@ -52,9 +52,8 @@ if [ -d "$SCRIPT_DIR/wads" ]; then
     echo "Select the WAD file to run:"
     echo "1) Freedom Scoops First Crunch (fsfc1.wad)"
     echo "2) Freedom Scoops Second Crunch (fssc1.wad)"
-    echo "3) Freedom Scoops Arena (fsa.wad)"
     echo "[CTRL+C] to exit"
-    read -p "Enter choice [1-3]: " choice
+    read -p "Enter choice [1-2]: " choice
 
     case $choice in
         1)
@@ -63,9 +62,6 @@ if [ -d "$SCRIPT_DIR/wads" ]; then
         2)
             WAD_FILE="fssc1.wad"
             ;; 
-        3)
-            WAD_FILE="fsa.wad"
-            ;;
         *)
             echo "Invalid choice"
             exit 1

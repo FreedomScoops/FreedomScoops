@@ -2,15 +2,30 @@
 This is changelog to keep track of what is happening.
 
 == General 
+== Notes (12-31-2024) ZNukem
+Happy new year!
 
-== Notes (8-26-2024) ZNukem
+== Notes (12-25-2024) ZNukem
+Merry Christmas. Got small update here.
+
+  ** Moved and renamed changelog.xml to feed.xml for upcoming website. 
+  ** New pickup sound I made in LMMS.
+  ** Edits to hud numbers colors again.
+  ** Added some basic face frames for Waffle Crusader 
+  ** Improved once more on the story and alter some names.
+  ** Added in more textures I forgot to submit last few months.
+  ** Tweeked the readme.adoc once again. 
+  ** For the time being, I've removed Freedom Scoops Arena off the list and disable some stuff from compiler. FC and SC have already planned zapmatch maps. In the future, FS Gold could contain more. I am not sure if having FS Arena is required right now. If anything changes in the future, I will include it again.
+  ** I'm not sure how much more was changed. Guess commit log history should tell more. I done this to the best of my ability. 
+
+== Notes (11-26-2024) ZNukem
 I have added iwad loading (IWADINFO) for GZDoom and twerked some stuff.
 
   ** Adjusted the Makefile to add .IPK3 for loading vanilla IWADs by IWADINFO. Existing IWADs cover everything for now. There might be plans to add widescreen HUD and cursors to these .IPK3 files in the future. There are no plans to support a full standalone gzdoom packages for both games. Just for loading IWAD only.
   ** New lumps added FSFC1INFO and FSSC1INFO will rename into IWADINFO for both IPAK files once makefile runs.
   ** Tweeked the readme.adoc to adjust some stuff. Even other text files.
 
-== Notes (8-25-2024) ZNukem
+== Notes (11-25-2024) ZNukem
 Hopefully that everything listed for now.
   
   ** Updated CI: Artfact from v1 to v4

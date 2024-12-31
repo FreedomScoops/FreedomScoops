@@ -36,9 +36,7 @@ jobs:
         curl -o FDCREDITS https://raw.githubusercontent.com/freedoom/freedoom/master/CREDITS
         make dist
         mkdir -p artifacts/fs1
-        mkdir -p artifacts/fsa
         unzip wads/fs1-*.zip -d artifacts/fs1
-        unzip wads/fsa-*.zip -d artifacts/fsa
         export VERSION=$(git describe --abbrev=8)
         if [[ ${VERSION:0:1} == "v" ]]; then
           export VERSION=${VERSION:1}
@@ -49,8 +47,4 @@ jobs:
       with:
         path: "artifacts/fs1"
         name: Freedom Scoops ${{steps.buildstep.outputs.VERSION}}
-    - name: Upload Freedom Scoops Arena
-      uses: actions/upload-artifact@v4
-      with:
-        path: "artifacts/fsa"
-        name: Freedom Scoops Arena${{steps.buildstep.outputs.VERSION}}
+    

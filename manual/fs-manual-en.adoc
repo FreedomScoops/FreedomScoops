@@ -10,9 +10,12 @@ Welcome to Freedom Scoops, a complete game that is
 https://www.gnu.org/philosophy/free-sw.html[free]
 and https://opensource.org/osd/[open source software].
 Freedom Scoops is made available under the <<licence,modified BSD license>>, meaning that
-anyone is free to share it, modify it and reuse parts of it.
+anyone is free to share it, modify it and reuse parts of it. For more
+details, see the website at https://FreedomScoops.github.io/.
 
-For more details, see the website at https://FreedomScoops.github.io/.
+Like to keep up with latest changes with the game story read it
+https://github.com/FreedomScoops/FreedomScoops-dev/blob/main/misc/[here]
+or on website.
 
 == Installing Freedom Scoops
 
@@ -41,14 +44,15 @@ following:
 * If launching from the command line, try
   eg. `my-favorite-port -iwad FSFC1.wad`.
 
-Freedom Scoops is split into _Freedom Scoops 1: First Crunch_ (`FSFC1.wad`) and
-_Freedom Scoops 1: Second Crunch_ (`FSSC1.wad`). First and Second Crunch is split into two separate
-wads each with five levels, This gives 10 levels to play through. 
+* Now you want to use GZDoom you will need to copy over both GZ_RES.ipk3
+files in your engine folder. Keep in mind this is only temporary
+solution until official support is added to GZDoom. Should work just
+fine for now at lest.
 
-Freedom Scoops Arena (`FSA.wad`) is a monster-free set of levels, made specifically
-for player-versus-player. For how to host a multiplayer game,
-check the instructions on your source port. plus the secret levels -- if
-you can discover how to reach them.
+Freedom Scoops is split into _Freedom Scoops 1: First Crunch_
+(`FSFC1.wad`) and _Freedom Scoops 1: Second Crunch_ (`FSSC1.wad`). First
+and Second Crunch is split into two separate wads each with five levels
+and five multiplayer levels, This gives 20 levels to play through. 
 
 <<<
 

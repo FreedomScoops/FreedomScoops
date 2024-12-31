@@ -1,15 +1,15 @@
 = Freedom Scoops: Saga
 
-_Freedom Scoops_ is a free, open-source game based on the Doom engine, 
-inspired by _Chex Quest_, and aims to create something 
-distinctly different and new using _Freedoom_ technology 
-as the foundational base for the project. 
+_Freedom Scoops_ is a free, open-source game based on the Doom engine,
+inspired by _Chex Quest_, and aims to create something distinctly
+different and new using _Freedoom_ technology as the foundational base
+for the project. 
 
-However, _Freedom Scoops_ itself is just the raw material for a game. 
-To play it, you must pair it with a compatible _Doom_ engine. 
-It provides compatible some resources for mapping designers 
-who want to create maps for _Chex Quest_, benefiting the modding community 
-by generating more user content in the long term. 
+However, _Freedom Scoops_ itself is just the raw material for a game. To
+play it, you must pair it with a compatible _Doom_ engine. It provides
+compatible some resources for mapping designers who want to create maps
+for _Chex Quest_, benefiting the modding community by generating more
+user content in the long term. 
 
 There is a massive https://doomwiki.org/wiki/Idgames_archive[back
 catalog], spanning over two decades, containing thousands of _Doom_
@@ -17,35 +17,62 @@ levels and other modifications (“mods”) made by fans of the game.
 _Freedom Scoops_ aims to be compatible with these and allows most to be
 played without the need to use non-free software.
 
-_Freedom Scoops_ is actually three games in one, consisting of two
-single-player oriented campaigns and one set of levels designed
-exclusively for multiplayer deathmatch:
+_Freedom Scoops_ is actually two games in one, consisting of two
+single-player oriented campaigns and one set of levels inside the maps
+designed exclusively for multiplayer deathmatch:
 
-[horizontal]
-*Freedom Scoops First Crunch*:: Single episode five levels, totaling ten, including added multiplayer levels within them.
-This game aims for compatibility with _Chex: Quest_
-mods, also known as plain _Doom_ or _Doom 1_. 
-*Freedom Scoops Second Crunch*:: Single episode five levels, totaling ten, including added multiplayer levels within them.
-This game aims for compatibility with _Chex: Quest 2_
-mods, also known as plain _Doom_ or _Doom 1_. 
-*Freedom Scoops: Arena*:: A 32-level game designed for competitive zapmatch play a spin-off to the saga.
+[horizontal] 
+*Freedom Scoops First Crunch*:: Single mini wad episode five levels,
+totaling ten, including added multiplayer zapmatch levels within them.
+This game aims for compatibility with _Chex: Quest_ mods, also known as
+plain _doom_ or _chex_. 
 
-The engine uses a single file, such as +FS.wad+, that contains
-all the game data such as graphics, sound effects, music, and so on.
-This file is often called an “IWAD” by those in the _Doom_ and
-_Freedom Scoops_ communities.  While the _Doom_ engine source code is free,
-you would normally still need one of the proprietary data files from
-https://www.idsoftware.com/[id Software] to play _Doom_.  _Freedom Scoops_
-aims to create a free alternative: combined with the GPL-licensed
-_Doom_ source code, this results in a completely free game.
+*Freedom Scoops Second Crunch*:: Single mini wad episode five levels,
+totaling ten, including added multiplayer zapmatch levels within them.
+This game aims for compatibility with _Chex: Quest 2_ but now iwad
+instead over pwad. mods, also known as plain _doom_ or _chex_. 
+
+The engine uses a single file, such as +FS.wad+, that contains all the
+game data such as graphics, sound effects, music, and so on. This file
+is often called an “IWAD” by those in the _Doom_ and _Freedom Scoops_
+communities.  While the _Doom_ engine source code is free, you would
+normally still need one of the proprietary data files from
+https://www.idsoftware.com/[id Software] to play _Doom_.  _Freedom
+Scoops_ aims to create a free alternative: combined with the
+GPL-licensed _Doom_ source code, this results in a completely free game.
 
 For more information, see https://FreedomScoops.github.io/.
 
-== Story
+== Story and Concept Art 
 
-Story working in progress not final: 
-Hexar Waffleton is main character of the story you play as him the hero. Want to know more of the scoop read the story:
-https://github.com/FreedomScoops/FreedomScoops-dev/blob/main/fs-story.adoc[here].
+Story working in progress not final: Waffleton is main character
+of the story you play as him the Waffle Crusader. Want to know more of
+the scoop read the story:
+https://github.com/FreedomScoops/FreedomScoops/blob/main/misc/[here].
+ or on the website
+
+== Current Project Status
+
+The project is in alpha development. Once everything is modified,
+including rework of some documentation. It will appear less like
+Freedoom in-game. We are slowly converting tools and workflow to be used
+with the project. For now just aiming to complete the First and Second
+Crunch since mostly easy way to go and straightforward to do. There are
+no stable releases at this time. You can try out early development CI
+builds and get a sense of what's going on. We are doing the work in our
+pace what time allows.
+
+== Supported Engines 
+
+The project is aimed more towards vanilla dos type of game. I would
+leave that up to developers of a source port if they want to add this
+game or not. Any old source ports may not be compatible would require to
+rename the wad or some modifications to work. Unless updated or
+supported by the source port developer.
+
+I did modified fork of chocolate-doom has support for data just for
+testing. There basic support for gzdoom using IPK3 to load both game
+data files but these are only temporary solution.
 
 == How to play
 
@@ -56,64 +83,65 @@ available, a lengthy list of which is available on the
 https://doomwiki.org/wiki/Source_port[Doom Wiki].
 
 One particularly recommended by the _Freedom Scoops_ project is
-https://zdoom.org/[GZDoom].  This engine offers good support for
+https://zdoom.org/[GZDoom]. This engine offers good support for
 single-player, multi-player, and the majority of mods created for both
 _Doom_ and _Freedom Scoops_.
 
 On Windows, you should place _Freedom Scoops_’s data files (those ending
 with +.wad+) alongside the engine (eg, +odamex.exe+).  On Unix-like
-systems, these data files should go in either +/usr/share/games/doom+
-or your home directory.  If _Freedom Scoops_ comes packaged as part of your
+systems, these data files should go in either +/usr/share/games/doom+ or
+your home directory.  If _Freedom Scoops_ comes packaged as part of your
 operating system distribution, it should already be installed into the
 proper location.
 
 Hopefully, your engine of choice should already be capable of running
 _Freedom Scoops_ without extra configuration.  This may not be the case,
 however, if the engine does not recognize any of the filenames for
-_Freedom Scoops_, and might require manual intervention to make it so.  One
-of the following options should solve it:
+_Freedom Scoops_, and might require manual intervention to make it so.
+One of the following options should solve it:
 
   * Use the +-iwad+ command line parameter.  For example, to play
-    Phase 2, you can enter +-iwad Freedom Scoops.wad+ either at a command
+    Second Crunch, you can enter +-iwad FS1FC.wad+ either at a command
     line, or adding it to an application shortcut.
-  * Use the +DOOMWADPATH+ environment variable.  Many engines support
-    this variable to add directories and/or files to their search
-    path.  The exact syntax matches your operating system’s normal
-    +PATH+ environment variable.
+
+  * Use the +DOOMWADPATH+ environment variable. Many engines support
+    this variable to add directories and/or files to their search path.
+    The exact syntax matches your operating system’s normal +PATH+
+    environment variable.
+    
   * Rename the game files.  This may be a bit crude, but you can
     rename the files to match those of _Doom_’s.  This is often the
     easiest quick-fix, although it is normally desirable to use one of
     the above methods if possible.
 
-    ** +FS1FC.wad+ can be renamed to +doom.wad+
-    ** +FS1SC.wad+ can be renamed to +doom.wad+
-    ** +FSA.wad+ can be renamed to +doom2.wad+
+  ** +FS1FC.wad+ can be renamed to +chex.wad+ or +doom.wad+ 
+  ** +FS1SC.wad+ can be renamed to +chex2.wad+ or +doom.wad+
 
 Additionally, for Unix-like operating systems, such as GNU/Linux or a
-BSD variant, _Freedom Scoops_ may be packaged and installed with programs
-named +Freedom Scoops 1+, +Freedom Scoops 2+, and +freedom Scoops Arena+ that automatically run an
-engine for proper play.  Desktop files may also be installed so that
-you can start the game using a graphical interface and avoid the
-command line altogether.
+BSD variant, _Freedom Scoops_ may be packaged and installed with
+programs named +FSFC1+, and +FSSC1+ that automatically run an engine for
+proper play.  Desktop files may also be installed so that you can start
+the game using a graphical interface and avoid the command line
+altogether.
 
 == What “free” means
 
 When we speak of free content or software, we refer to the movement in
 which your freedoms to use, copy, modify, and study a work is not
-infringed.  For example, you may freely use _Freedom Scoops_ for any purpose
-you see fit, you may redistribute it to anyone without needing to ask
-for permission, you may modify it (provided you keep the license
-intact, see `COPYING`), and you may study it--for example, to see how
-an “IWAD” is built.  To facilitate this, you can get the full source
-code for _Freedom Scoops_, in this case, in the form of a DeuTex tree.
+infringed.  For example, you may freely use _Freedom Scoops_ for any
+purpose you see fit, you may redistribute it to anyone without needing
+to ask for permission, you may modify it (provided you keep the license
+intact, see `COPYING`), and you may study it--for example, to see how an
+“IWAD” is built.  To facilitate this, you can get the full source code
+for _Freedom Scoops_, in this case, in the form of a DeuTex tree.
 
 You may read more about free software at the https://www.gnu.org/[GNU]
 and https://www.fsf.org/[Free Software Foundation] websites.
 
 == Contributing to Freedom Scoops
-
-Contributions to _Freedom Scoops_ are always welcome, however there are a
-few guidelines that should be followed:
+This is mostly a hobby project. Contributions to _Freedom Scoops_ are
+always welcome, however there are a few guidelines that should be
+followed:
 
 === Intellectual property
 
@@ -121,65 +149,73 @@ We know people hate legalese, but this is important. This applies to
 *everything* which is submitted.
 
 You must be careful when basing on existing graphics or sounds.  Most
-_Doom_ projects are lax on reusing intellectual property--there are
-many mods which contain modified _Doom_ sprites, for example.
-However, due to the nature of this project, we do not have the same
-liberty to rip as we please.
+_Doom_ projects are lax on reusing intellectual property--there are many
+mods which contain modified _Doom_ sprites, for example. However, due to
+the nature of this project, we do not have the same liberty to rip as we
+please.
 
 The general rules go as follows:
 
   * You must have permission for everything you submit. If you make
     your own resources, do not base on resources from _Chex_ or any
-    other restricted work, and do not use artificial intelligence 
-    to generate art/sound resources. If you take work from other places, 
-    please make sure that the work is freely-licensed or that you obtain permission to 
-    include it in the _Freedom Scoops_ project. They may not place additional 
-    restrictions compared to the normal _Freedom Scoops_
-    license. 
+    other restricted work, and do not use artificial intelligence to
+    generate art/sound resources. If you take work from other places,
+    please make sure that the work is freely-licensed or that you obtain
+    permission to include it in the _Freedom Scoops_ project. They may
+    not place additional restrictions compared to the normal _Freedom
+    Scoops_ license. 
+
   * Do not try to emulate _Chex_ resources exactly.  Where possible,
-    put effort to make new versions look visibly different from
-    _Chex_.  This is a tough call, because our compatibility with
-    _Chex_ mods limits how far we can deviate, but it is feasible.
+    put effort to make new versions look visibly different from _Chex_.
+    This is a tough call, because our compatibility with _Chex_ mods
+    limits how far we can deviate, but it is feasible.
+
   * Be especially careful of “free textures” (or “free sounds” or
-    “free graphics”) sites.  Although these would appear at first to
-    be okay to use, many are free for “non-commercial use only.”
-    One of the things we want to be able to do is put this in
-    GNU/Linux distributions (which can be sold or developed
-    commercially).
-  * The project must be compatible with vanilla DOS and above, 
+    “free graphics”) sites.  Although these would appear at first to be
+    okay to use, many are free for “non-commercial use only.” One of the
+    things we want to be able to do is put this in GNU/Linux
+    distributions (which can be sold or developed commercially).
+
+  * The project must be compatible under vanilla DOS, 
     and optimized to run on low hardware as efficiently as possible.
 
 === Levels
 
 All levels for _Freedom Scoops_ must be vanilla-compatible, requiring an
-expanded-limits or limit-removing engine is not permissible.  This
-means you may not exceed the limits of the original _Doom_ engine, and
-do not depend on additional mapping features. Levels should be in
-_Doom_’s original format, not in “Hexen” or "GZDoom"-format.
+expanded-limits or limit-removing engine is not permissible.  This means
+you may not exceed the limits of the original _Doom_ engine, and do not
+depend on additional mapping features. Levels should be in _Doom_’s
+original format, not in “Hexen” or "GZDoom"-format.
 
 It is sensible to also heed the following guidelines:
 
   * Make sure that skill levels are implemented, and that all
     multiplayer start points, both cooperative and deathmatch, are
     present.
+ 
   * Try to make levels appropriately difficult for their position
-    within the progression of the game.  Also bear in mind that not
-    all players may be as skilled a player as you.
+    within the progression of the game.  Also bear in mind that not all
+    players may be as skilled a player as you.
+  
   * Do not use tricks that exploit _Doom_’s software renderer; some
     engines, especially those that use hardware accelerated rendering,
     may not render it properly.  Examples of tricks to avoid include
     those used to simulate 3D bridges and “deep water” effects.
+  
   * While unrestricted by limits, do not make excessively complicated
-    scenes.  It is desirable that _Freedom Scoops_ levels should be playable
-    on low-powered hardware, such as phones and old computers.
+    scenes.  It is desirable that _Freedom Scoops_ levels should be
+    playable on low-powered hardware, such as phones and old computers.
+  
   * Test your levels in https://www.chocolate-doom.org/[Chocolate
     Doom] to make sure that vanilla compatibility is maintained.  This
-    is an engine with strict adherence to vanilla Doom limits and
-    bugs, and working in it assures that levels can be played with any
-    _Doom_ engine.
+    is an engine with strict adherence to vanilla Doom limits and bugs,
+    and working in it assures that levels can be played with any _Doom_
+    engine.
+  
   * Use a Doom editor to check for errors. In
-    http://eureka-editor.sourceforge.net/[Eureka] it's possible to
-    check for errors with the Check / All menu, or by pressing `F9`.
+    http://eureka-editor.sourceforge.net/[Eureka] it's possible to check
+    for errors with the Check / All menu, or by pressing `F9`.
+  
   * If possible run `make test` and fix any errors found. Note that
     some of the errors can be fixed by `make fix`.
 
@@ -187,57 +223,77 @@ It is sensible to also heed the following guidelines:
 
 Graphics should generally have the same color and size as the original
 _Doom_ graphics, as to remain compatible with mods. Otherwise, levels
-may end up looking like a nightmare in design.  They may be
-thematically different as long as it doesn’t clash.
+may end up looking like a nightmare in design.  They may be thematically
+different as long as it doesn’t clash.
 
-Since Freedom Scoops is a unique and original project, it's crucial to avoid using 
-any brand names, such as "Chex," which is a trademark of General Mills.
-Instead, we create and use entirely fictional names with no connection to real-world brands. 
-For example, "Freedom Scoops" can represent a blend of different cereals 
-and unrelated to any existing products or trademarks. A made up fictional name like 
-"Galactic Nutritional Alliance or (G.N.A.)" can be used on surfaces 
-and textures as an example or maybe something generic should do.
+Since Freedom Scoops is a unique and original project, it's crucial to
+avoid using any brand names, such as "Chex," which is a trademark of
+General Mills. Instead, we create and use entirely fictional names with
+no connection to real-world brands. For example, "Freedom Scoops" can
+represent a blend of different cereals and unrelated to any existing
+products or trademarks. A made up fictional name like "Galactic
+Nutritional Alliance or (G.N.A.)" can be used on surfaces and textures
+as an example or maybe something generic should do.
 
 === Documentation
 
-_Freedom Scoops_ always needs help with documentation, so please send your
-patches, but keep in mind:
+_Freedom Scoops_ always needs help with documentation, so please send
+your patches, but keep in mind:
 
   * We use http://asciidoc.org/[AsciiDoc] for writing the
-    documentation.  AsciiDoc is a simple plaintext-based format which
-    is simple to read and write in its source form, and can generate
-    nice HTML documents out of them.
+    documentation.  AsciiDoc is a simple plaintext-based format which is
+    simple to read and write in its source form, and can generate nice
+    HTML documents out of them.
+  
   * Headers are formated in a wiki-style format, this makes it easier
     for Vim (perhaps other editors, too) to automatically re-format
     text.
+  
   * Text is kept at 72 characters wide.  In Vim, you can set the
     editor to automatically insert line breaks as you’re typing by
-    performing `set textwidth=72`.  Special exceptions to the width
-    rule might be allowed when necessary (for example, inserting long
-    URLs).
+    performing `set textwidth=72`.  Special exceptions to the width rule
+    might be allowed when necessary (for example, inserting long URLs).
+
+If not using Vim, For easier formatting in **VS Code**, you can install
+the **Rewrap** extension:
+
+* Install Rewrap: Go to Extensions (`Ctrl+Shift+X`), search for
+"Rewrap", and click Install.
+
+* Set the wrapping column: Go to Settings (`Ctrl+,`), search for
+"Rewrap: Wrapping Column", and set it to `72`.
+
+* Press CTRL+A to highlight some text, Then press `Alt+Q` (or `Option+Q`
+on macOS) to rewrap lines to 72 characters.
+
+This will help keep the documentation consistent with the 72-character
+width rule.
 
 === Submitting your work
 
 There are many places to submitting content to Freedom Scoops project. 
 
-Mostly being primarily developed in ZNukem's Luke Ken project 
-https://discord.gg/TSFYwTPqUk/[discord] just to keep his projects organized. 
+Mostly being primarily developed in ZNukem's Luke Ken project
+https://discord.gg/TSFYwTPqUk/[discord] just to keep the projects
+organized. 
 
 An alternative to using the forum, is to post your submission on the
-https://github.com/FreedomScoops/FreedomScoops/issues[issue tracker], which may
-also be peer-reviewed and provide a feedback cycle.
+https://github.com/FreedomScoops/FreedomScoops/issues[issue tracker],
+which may also be peer-reviewed and provide a feedback cycle. Just
+always wait for a closure response from the owner or maintainers before
+closing a request. Allows us to communicate more clearly.
 
-Unfortunately, the Freedom Scoops project cannot provide hosting space in
-the form of a web page nor FTP, however there are many free file hosts
-to use when you need a location to upload files.  Sites and services
-such as https://www.dropbox.com/[Dropbox] and
+Unfortunately, the Freedom Scoops project cannot provide hosting space
+in the form of a web page nor FTP, however there are many free file
+hosts to use when you need a location to upload files.  Sites and
+services such as https://www.dropbox.com/[Dropbox] and
 https://mega.co.nz/[Mega], as well as others, are common and should be
 simple to use.
 
 ==== Crediting information
 
 _FreedomScoops_ is made up of submissions from many people all over the
-globe.  All of them, and you, deserve credit!  Please do not forget to
+globe.  All of them, and you, deserve credit! Please do not forget to
 provide your name and email when submitting resources.
 
 ==== Using Git
@@ -265,14 +321,34 @@ git commit --author "Bob Smith <bob@example.com>" ...
 If they prefer not to give an email then the email can be omitted, so
 just "Bob Smith" in the above example.
 
+If you are submitting the work yourself as a pull request. Besure to
+compile and your test changes first. Always wait for a response from the
+owner or maintainers before taking action. Avoid closing pull requests
+at the last minute, as this may cause issues in the commit tree if it
+got approved.
+
 === Community
-We welcome anyone who is interested in the development of Freedom Scoops. Join the Luke Ken Discord community, where you can connect with other fans of the game, share your own mods and levels, and get help and support from other members. Click https://discord.gg/TSFYwTPqUk/[here] to join.
+If you like to hang out with the developer of Freedom Scoops or just to
+chill to keep track of the project development. You can stop by ZNukem's
+Luke Ken Community: https://discord.gg/TSFYwTPqUk/[discord] where
+project is at. You can connect with other fans of the game, share your
+own mods and levels, and get help and support from other members. Also
+Freedom Scoops linked to Luke Ken universe as a sub-verse. You learn
+something new today.
 
-=== Acknowledgements
-- **Freedom Scoops Contributors:** Thanks to all the people that are helping out with the project.
-- **Doomworld:** Thanks to all the people over there for feedback and support.
-- **Digital Cafe:** For creating the original Chex Quest game, which served as one of the inspirations for this project.
-- **Freedoom:** For providing the free software game that inspired this project, as well as the tools that serve as its foundation.
+=== Acknowledgements 
+- **Freedom Scoops Contributors:** Thanks to all the people that are
+helping out with the project. 
 
-=== Resources that was used for the project
-The https://freedoom.github.io/[Freedoom] project to make the game and is forked for Freedom Scoops.
+- **Doomworld:** Thanks to all the people over there for feedback and
+support. 
+
+- **Digital Cafe:** For creating the original Chex Quest game, which
+served as one of the inspirations for this project. 
+
+- **Freedoom:** For providing the free software game that inspired this
+project, as well as the tools that serve as its foundation.
+
+=== Resources that was used for the project 
+The https://freedoom.github.io/[Freedoom] project to make the game and is
+forked for Freedom Scoops.

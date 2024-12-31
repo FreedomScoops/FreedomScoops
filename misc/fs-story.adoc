@@ -1,21 +1,52 @@
-= Freedom Scoops Story
-Gerne: cartoon-like, sci-fi, futuristic
+= Freedom Scoops Plot Story
+Gerne: comic-cartoon-like, sci-fi, futuristic
 
 The story still working in progress should be fine for now.
-You play as Hexar Waffleton aka The Hero a super cool hexagon shape cereal hero fights for freedom to take down the Xenagons alien plant monsters.
-After the (First Contact) you was send out on mission to stop them along the way they had more evil plans underway.
+
+== Story So far?
+
+You play as Waffleton aka The Waffle Crusader a super cool hexagon shape
+cereal hero fights for freedom to take down the Floragons alien plant
+monsters. Waffleton is a hero has his own secret layer and gadgets even
+a cool space cruiser. Like a hero from a comic book I can say. After the
+(First Contact) by Floragons you as The Waffle Crusader heared thier
+evil plans. And was send out on mission to stop them along the way they
+had more plans underway.
 
 Freedom Scoops 1: First Crunch (ep2) 
 Title: Search And Rescue
 
-Description: From your previous mission lead you to find out what is going on Delta Base 27. Landed your ship near the landing zone where other ships are. You enter into the entrance of the base mostly with some crates. As you explore further in and around the base, you discover that it has been invaded by biomatric alien plants life forms. As you went through each corridor until you found the last survivors and helped them escape the base, you learned about the existence of these alien plants known as Xenagons. 
+Description: From your previous mission lead you to find out what is
+going on Delta Base 27. Landed your ship near the landing zone where
+other ships are. You enter into the entrance of the base mostly with
+some crates. As you explore further in and around the base, you discover
+that it has been invaded by biomatric alien plants life forms. As you
+went through each corridor until you found the last survivors and helped
+them escape the base, you learned about the existence of these alien
+plants known as Floragons. 
 
 Freedom Scoops 1: Second Crunch (ep3) 
 Title: Freedom City
 
-Description: As you return, you notice the Xenagons' gooey experiment life form known as Goozite, which you will encounter as a new enemy. Walking around Freedom City you must toest them to the ground and find out where they are coming from. Leading yourself into underground sewer to land into the hidden Xenagons base, as you found there base of operations where you have to stop there Goozite cloning machines and phases in cloning chamber. As you defeat rest of alien plants and scared them off the planet they dare not to return when Hexar Waffleton is around. The final ep3 screen in FS Gold shows all of the monsters being arrested and lined up boarding a ship being taking away from the planet. Hexar stood there, pleased that he had saved the day. He knew it was far from over. He hopes a new mission would take him on an adventure.
+Description: As you return, you notice the Floragons gooey experiment
+life form known as Goozite, which you will encounter as a new enemy.
+Walking around Freedom City you must toest them to the ground and find
+out where they are coming from. Leading yourself into underground sewer
+to land into the hidden Floragons base, as you found there base of
+operations where you have to stop there Goozite cloning machines and
+phases in cloning chamber. As you defeat rest of alien plants and scared
+them off the planet they dare not to return when The Waffle Crusader is
+around. The final ep3 screen in FS Gold shows all of the monsters being
+arrested and lined up boarding a ship being taking away from the planet.
+The Waffle Crusader stood there, pleased that he had saved the day. He
+knew it was far from over. He hopes a new mission would take him on an
+adventure.
 
-There are plans to add prologue (ep1) and epilogue (ep4) stories in the future that will become Freedom Scoops Gold wad, 
-but the focus is currently on First and Second Crunch for now. Once story is made that one will be up next to do. ; )
+There are plans to add prologue (ep1) and epilogue (ep4) stories in the
+future that will become Freedom Scoops Gold wad, but the focus is
+currently on First and Second Crunch for now. Once extra story is made
+that one will be up next to do. ; )
+
+Oh btw, I made Second Crunch a iwad over pwad. Just easier to run.
 
 - ZNukem

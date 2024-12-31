@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
+# This is modified version of Freedoom Version 1.3 compiler.
 
 # This adds date to builds, You may comment out for version below. Uncomment to restore it.
 VERSION=$(shell git describe --abbrev=8 --dirty 2>/dev/null || echo $(shell date '+%m-%d-%Y')-Build) 
@@ -27,7 +28,7 @@ FSFC1_GZDOOM_RES=$(WADS)/FSFC1_GZ_RES.ipk3
 FSSC1=$(WADS)/FSSC1.wad
 FSSC1_GZDOOM_RES=$(WADS)/FSSC1_GZ_RES.ipk3 
 
-FREEDM=$(WADS)/FSA.wad
+## FREEDM=$(WADS)/FSA.wad
 
 OBJS=$(FREEDM) $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES)
 
@@ -169,7 +170,7 @@ TEXTDOCS=COPYING.txt CREDITS.txt CREDITS-MUSIC.txt FDCREDITS.txt
 DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
-	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
+	## LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
 	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES) $(DISTDOCS)
 
 json: $(OBJS)
@@ -187,6 +188,7 @@ doom.gpl: lumps/playpal/playpal-base.lmp
 gimp-palette: doom.gpl
 
 clean:
+
 	$(RM) *.html doom.gpl $(OBJS) \
 	      ./COPYING.txt ./CREDITS.txt ./CREDITS-MUSIC.txt ./FDCREDITS.txt \
 	      ./wadinfo_FSFC1.txt \
