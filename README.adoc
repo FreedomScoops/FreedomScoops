@@ -1,6 +1,6 @@
 = Freedom Scoops: Saga
 
-image::https://github.com/FreedomScoops/FreedomScoops/tree/main/.github/showcase/icon.png[FS Icon]
+image::https://raw.githubusercontent.com/FreedomScoops/FreedomScoops/main/.github/showcase/icon.png[FS Icon]
 
 _Freedom Scoops_ is a free, open-source game based on the Doom engine,
 inspired by _Chex Quest_, and aims to create something distinctly
