@@ -1,5 +1,5 @@
 = Freedom Scoops Plot Story
-Gerne: comic-cartoon-like, sci-fi, futuristic
+Gerne comic-cartoon-like, sci-fi, futuristic
 
 The story still working in progress should be fine for now.
 
@@ -48,5 +48,7 @@ currently on First and Second Crunch for now. Once extra story is made
 that one will be up next to do. ; )
 
 Oh btw, I made Second Crunch a iwad over pwad. Just easier to run.
+
+The hero catch phrase: When the galaxy needs a hero, Waffle Crusader is here.
 
 - ZNukem

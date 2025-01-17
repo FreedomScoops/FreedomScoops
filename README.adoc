@@ -13,11 +13,9 @@ compatible some resources for mapping designers who want to create maps
 for _Chex Quest_, benefiting the modding community by generating more
 user content in the long term. 
 
-There is a massive https://doomwiki.org/wiki/Idgames_archive[back
-catalog], spanning over two decades, containing thousands of _Doom_
-levels and other modifications (“mods”) made by fans of the game.
-_Freedom Scoops_ aims to be compatible with these and allows most to be
-played without the need to use non-free software.
+You can play some Chex Quest modifications. However, compatibility can
+vary. If there are any game modifications, of course. Please let us know
+if there is archive and we will link it here.
 
 _Freedom Scoops_ is actually two games in one, consisting of two
 single-player oriented campaigns and one set of levels inside the maps
