@@ -23,14 +23,14 @@ MANUAL_ADOC_FILES=$(wildcard manual/fs-manual-??.adoc)
 MANUAL_PDF_FILES=$(subst .adoc,.pdf,$(MANUAL_ADOC_FILES))
 
 FSFC1=$(WADS)/FSFC1.wad
-FSFC1_GZDOOM_RES=$(WADS)/FSFC1_GZ_RES.ipk3 
+FSFC1_UZDOOM_RES=$(WADS)/FSFC1_UZ_RES.ipk3 
 
 FSSC1=$(WADS)/FSSC1.wad
-FSSC1_GZDOOM_RES=$(WADS)/FSSC1_GZ_RES.ipk3 
+FSSC1_UZDOOM_RES=$(WADS)/FSSC1_UZ_RES.ipk3 
 
 ## FREEDM=$(WADS)/FSA.wad
 
-OBJS=$(FREEDM) $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES)
+OBJS=$(FREEDM) $(FSFC1) $(FSSC1) $(FSFC1_UZDOOM_RES) $(FSSC1_UZDOOM_RES)
 
 .PHONY: clean dist pngs-modified-check
 
@@ -115,11 +115,13 @@ $(FSSC1): wadinfo_FSSC1.txt subdirs
 # Create the zip file
 # Clean up temporary files 
 # Rename the zip to .ipk3
-$(FSFC1_GZDOOM_RES):
+
+$(FSFC1_UZDOOM_RES):
 	cp lumps/FSFC1INFO iwadinfo.txt   
-	zip -r FSFC1_GZ_RES.zip iwadinfo.txt 
+	zip -r FSFC1_UZ_RES.zip iwadinfo.txt 
 	rm iwadinfo.txt          
-	mv FSFC1_GZ_RES.zip $(FSFC1_GZDOOM_RES) 
+	mv FSFC1_UZ_RES.zip $(FSFC1_UZDOOM_RES) 
+
 #---------------------------------------------------------
 # phase 2 (doom2) iwad
 
@@ -136,11 +138,11 @@ $(FREEDOOM2): wadinfo_phase2.txt subdirs
 # Create the zip file
 # Clean up temporary files 
 # Rename the zip to .ipk3
-$(FSSC1_GZDOOM_RES):
+$(FSSC1_UZDOOM_RES):
 	cp lumps/FSSC1INFO iwadinfo.txt 
-	zip -r FSSC1_GZ_RES.zip iwadinfo.txt
+	zip -r FSSC1_UZ_RES.zip iwadinfo.txt
 	rm iwadinfo.txt           
-	mv FSSC1_GZ_RES.zip $(FSSC1_GZDOOM_RES)
+	mv FSSC1_UZ_RES.zip $(FSSC1_UZDOOM_RES)
 
 #---------------------------------------------------------
 # Packaging and Docs
@@ -171,7 +173,7 @@ DISTDOCS=$(HTMLDOCS) $(TEXTDOCS) $(MANUAL_PDF_FILES)
 
 dist: $(OBJS) $(DISTDOCS)
 	## LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fsa $(FREEDM) $(DISTDOCS)
-	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(FSFC1_GZDOOM_RES) $(FSSC1_GZDOOM_RES) $(DISTDOCS)
+	LC_ALL=C VERSION=$(VERSION) scripts/makepkgs fs1 $(FSFC1) $(FSSC1) $(FSFC1_UZDOOM_RES) $(FSSC1_UZDOOM_RES) $(DISTDOCS)
 
 json: $(OBJS)
 ifndef JSON

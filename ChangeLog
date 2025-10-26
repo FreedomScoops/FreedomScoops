@@ -2,6 +2,13 @@
 This is changelog to keep track of what is happening.
 
 == General 
+
+== Notes (10-25-2025) ZNukem
+I know has been long time and such since touch this. I have busy with life as always. Only thing I updated was removal of gzdoom. Like would tell others use port you feel comfortable with. Any dev want support this game thats them. Felt like this change be better going forward.
+
+  ** Updated readme info.
+  ** Removed strings of GZDOOM in this patch. (IPK3 can be reused If you comment from makefile by remove # that use IPK3 files.)
+
 == Notes (12-31-2024) ZNukem
 Happy new year!
 

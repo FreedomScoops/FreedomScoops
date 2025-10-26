@@ -248,7 +248,7 @@ Each Freedoom level found in the "levels" directory should have exactly
 11 lumps in a https://zdoom.org/wiki/WAD[particular order] with no
 padding between the lumps. Of those 11 lumps 6 (<map name>, THINGS,
 LINEDEFS, SIDEDEFS, VERTEXES and SECTORS) are maintained by a level
-editor such as GZDoom Builder, SLADE or Eureka. The remaining 5 lumps
+editor such as Ultimate Doom Builder, SLADE or Eureka. The remaining 5 lumps
 (SEGS, SSECTORS, NODES, REJECT and BLOCKMAP) are added by a node
 builder. The Freedoom project uses the
 https://github.com/Doom-Utils/zennode[ZenNode] node builder. For

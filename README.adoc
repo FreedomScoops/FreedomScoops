@@ -71,7 +71,7 @@ rename the wad or some modifications to work. Unless updated or
 supported by the source port developer.
 
 I did modified fork of chocolate-doom has support for data just for
-testing. There basic support for gzdoom using IPK3 to load both game
+testing. There basic support for uzdoom using IPK3 to load both game
 data files but these are only temporary solution.
 
 == How to play
@@ -83,7 +83,7 @@ available, a lengthy list of which is available on the
 https://doomwiki.org/wiki/Source_port[Doom Wiki].
 
 One particularly recommended by the _Freedom Scoops_ project is
-https://zdoom.org/[GZDoom]. This engine offers good support for
+https://github.com/UZDoom/UZDoom[UZDoom]. This engine offers good support for
 single-player, multi-player, and the majority of mods created for both
 _Doom_ and _Freedom Scoops_.
 

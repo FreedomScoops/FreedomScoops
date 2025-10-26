@@ -30,7 +30,7 @@ The Doom Wiki
 https://doomwiki.org/wiki/Source_port[source ports page] has a
 comprehensive list of such programs. As a starting point, you can try:
 
-* https://zdoom.org[GZDoom], a modern source port that includes hardware
+* https://github.com/UZDoom/UZDoom[UZDoom], a modern source port that includes hardware
   rendering and extended mod capability.
 * https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom[Crispy Doom],
   a more minimalist source port that retains an “old school” feel.
@@ -44,10 +44,10 @@ following:
 * If launching from the command line, try
   eg. `my-favorite-port -iwad FSFC1.wad`.
 
-* Now you want to use GZDoom you will need to copy over both GZ_RES.ipk3
+* Now you want to use UZDoom you will need to copy over both UZ_RES.ipk3
 files in your engine folder. Keep in mind this is only temporary
-solution until official support is added to GZDoom. Should work just
-fine for now at lest.
+solution until official support is added to UZDoom. Should work just
+fine for now at lest. 
 
 Freedom Scoops is split into _Freedom Scoops 1: First Crunch_
 (`FSFC1.wad`) and _Freedom Scoops 1: Second Crunch_ (`FSSC1.wad`). First
